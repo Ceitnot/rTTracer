@@ -4,31 +4,22 @@ var hierarchy =
     [ "BitmapMaker< Functor >", "class_bitmap_maker.html", null ],
     [ "Boundaries", "class_boundaries.html", null ],
     [ "Camera", "struct_camera.html", null ],
-    [ "CGParser", "class_c_g_parser.html", [
-      [ "GeoParser", "class_geo_parser.html", null ],
-      [ "ObjParser", "class_obj_parser.html", null ]
-    ] ],
     [ "Color", "class_color.html", null ],
     [ "DevObject", "class_dev_object.html", null ],
     [ "DistantLight< DirectionType >", "class_distant_light.html", null ],
     [ "exception", null, [
-      [ "CudaException", "class_cuda_exception.html", null ],
       [ "CudaException", "class_cuda_exception.html", null ]
     ] ],
     [ "GeometryLoader< ObjectsType, BoundingVolumeType >", "class_geometry_loader.html", null ],
     [ "HostObject", "class_host_object.html", [
       [ "Cube", "class_cube.html", null ],
-      [ "Cube", "class_cube.html", null ],
       [ "Plane", "class_plane.html", null ],
-      [ "Plane", "class_plane.html", null ],
-      [ "Sphere", "class_sphere.html", null ],
       [ "Sphere", "class_sphere.html", null ]
     ] ],
     [ "ILight", "class_i_light.html", null ],
     [ "Mesh", "class_mesh.html", null ],
     [ "ObjectBox", "class_object_box.html", null ],
     [ "Pipeline", "class_pipeline.html", [
-      [ "MeshTransformation", "class_mesh_transformation.html", null ],
       [ "MeshTransformation", "class_mesh_transformation.html", null ]
     ] ],
     [ "PointLight< PointType >", "class_point_light.html", null ],

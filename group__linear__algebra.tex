@@ -10,9 +10,7 @@ Collaboration diagram for Linear algebra\+:\nopagebreak
 \subsection*{Files}
 \begin{DoxyCompactItemize}
 \item 
-file \hyperlink{r_t_tracer_2include_2geom_8cuh}{geom.\+cuh}
-\item 
-file \hyperlink{cuda_tracer__0__1_2include_2geom_8cuh}{geom.\+cuh}
+file \hyperlink{geom_8cuh}{geom.\+cuh}
 \end{DoxyCompactItemize}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
@@ -46,29 +44,11 @@ typedef \hyperlink{class_vec2}{Vec2} {\bfseries Vec2f}\hypertarget{group__linear
 \item 
 typedef \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ float $>$ {\bfseries Square\+Matrix4f}\hypertarget{group__linear__algebra_gad2b85d4d9fb5b5e4deaf20bff9595185}{}\label{group__linear__algebra_gad2b85d4d9fb5b5e4deaf20bff9595185}
 
-\item 
-typedef \hyperlink{class_vec3}{Vec3} {\bfseries Vec3f}\hypertarget{group__linear__algebra_ga826e11f7e1e44c9038dc9cc7747b5067}{}\label{group__linear__algebra_ga826e11f7e1e44c9038dc9cc7747b5067}
-
-\item 
-typedef \hyperlink{class_vec2}{Vec2} {\bfseries Vec2f}\hypertarget{group__linear__algebra_gabe2f61ad7a1f5cdfd77e55822d77ec77}{}\label{group__linear__algebra_gabe2f61ad7a1f5cdfd77e55822d77ec77}
-
-\item 
-typedef \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ float $>$ {\bfseries Square\+Matrix4f}\hypertarget{group__linear__algebra_gad2b85d4d9fb5b5e4deaf20bff9595185}{}\label{group__linear__algebra_gad2b85d4d9fb5b5e4deaf20bff9595185}
-
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
 enum {\bfseries Ray\+Type} \{ {\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
-{\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}, 
-{\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
-{\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}
- \}\hypertarget{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}{}\label{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}
-
-\item 
-enum {\bfseries Ray\+Type} \{ {\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
-{\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}, 
-{\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
 {\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}
  \}\hypertarget{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}{}\label{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}
 
@@ -99,7 +79,7 @@ constexpr double {\bfseries To\+Radian} (float x)\hypertarget{group__linear__alg
 \item 
 \hyperlink{class_square_matrix4}{Square\+Matrix4f} \hyperlink{group__linear__algebra_gac7b995c759cd539cf455cae62c4184e6}{rotate} (const \hyperlink{class_vec3}{Vec3f} \&axis, float deg\+Angle)
 \item 
-\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__linear__algebra_ga9f88dab197e2bd7e0940faf4fd447465}{refract} (const \hyperlink{class_vec3}{Vec3f} \&incident, const \hyperlink{class_vec3}{Vec3f} \&normal, const float \&refarction\+Index)
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__linear__algebra_gaabecdc3e2c4f70f7330aaa6eae1300ac}{refract} (const \hyperlink{class_vec3}{Vec3f} \&incident, const \hyperlink{class_vec3}{Vec3f} \&normal, const float \&refarction\+Index)
 \begin{DoxyCompactList}\small\item\em Refraction computation. \end{DoxyCompactList}\item 
 \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__linear__algebra_ga02c442d21d81c8d0cf889f830eddc236}{fresnel} (const \hyperlink{class_vec3}{Vec3f} \&incident, const \hyperlink{class_vec3}{Vec3f} \&normal, const float \&refraction\+Index, float \&kr)\hypertarget{group__linear__algebra_ga02c442d21d81c8d0cf889f830eddc236}{}\label{group__linear__algebra_ga02c442d21d81c8d0cf889f830eddc236}
 
@@ -116,9 +96,6 @@ void {\bfseries set\+Color\+And\+Texture} (\hyperlink{class_vec3}{Vec3f} \&objec
 \begin{DoxyCompactList}\small\item\em Reflection computation $ R = I − cos(θ)∗N − cos(θ)∗N $ (1) the formula for finding the reflection direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
-\item 
-constexpr float {\bfseries k\+Epsilon} = 1e-\/8\hypertarget{group__linear__algebra_gae5b9ba96ba9efa5b6469109acec14ce1}{}\label{group__linear__algebra_gae5b9ba96ba9efa5b6469109acec14ce1}
-
 \item 
 constexpr float {\bfseries k\+Epsilon} = 1e-\/8\hypertarget{group__linear__algebra_gae5b9ba96ba9efa5b6469109acec14ce1}{}\label{group__linear__algebra_gae5b9ba96ba9efa5b6469109acec14ce1}
 
@@ -141,8 +118,6 @@ constexpr float {\bfseries k\+Epsilon} = 1e-\/8\hypertarget{group__linear__algeb
 
 Reflection computation $ R = I − cos(θ)∗N − cos(θ)∗N $ (1) the formula for finding the reflection direction. 
 
-Reflection computation R = I − cos(θ)∗N − cos(θ)∗N (1) the formula for finding the reflection direction.
-
 
 \begin{DoxyParams}[1]{Parameters}
 \mbox{\tt in}  & {\em incident} & -\/ the directional vector of an incident ray \\
@@ -152,13 +127,13 @@ Reflection computation R = I − cos(θ)∗N − cos(θ)∗N (1) the formula for
 \end{DoxyParams}
 \index{Linear algebra@{Linear algebra}!refract@{refract}}
 \index{refract@{refract}!Linear algebra@{Linear algebra}}
-\subsubsection[{\texorpdfstring{refract(const Vec3f \&incident, const Vec3f \&normal, const float \&refarction\+Index)}{refract(const Vec3f \&incident, const Vec3f \&normal, const float \&refarctionIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Vec3f} refract (
+\subsubsection[{\texorpdfstring{refract(const Vec3f \&incident, const Vec3f \&normal, const float \&refarction\+Index)}{refract(const Vec3f \&incident, const Vec3f \&normal, const float \&refarctionIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vec3f} refract (
 \begin{DoxyParamCaption}
 \item[{const {\bf Vec3f} \&}]{incident, }
 \item[{const {\bf Vec3f} \&}]{normal, }
 \item[{const float \&}]{refarction\+Index}
 \end{DoxyParamCaption}
-)}\hypertarget{group__linear__algebra_ga9f88dab197e2bd7e0940faf4fd447465}{}\label{group__linear__algebra_ga9f88dab197e2bd7e0940faf4fd447465}
+)}\hypertarget{group__linear__algebra_gaabecdc3e2c4f70f7330aaa6eae1300ac}{}\label{group__linear__algebra_gaabecdc3e2c4f70f7330aaa6eae1300ac}
 
 
 Refraction computation. 

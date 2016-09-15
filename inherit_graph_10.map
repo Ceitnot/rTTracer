@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$struct_g_p_u_1_1_rendering_context.html" title="GPU::RenderingContext" alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" href="$class_host_object.html" title="Parent class for most of the class objects in the project except of Triangle class. " alt="" coords="5,56,93,83"/>
+<area shape="rect" id="node2" href="$class_cube.html" title="Cube" alt="" coords="146,5,199,32"/>
+<area shape="rect" id="node3" href="$class_plane.html" title="Plane" alt="" coords="145,56,200,83"/>
+<area shape="rect" id="node4" href="$class_sphere.html" title="Sphere" alt="" coords="141,107,204,133"/>
 </map>

@@ -8,20 +8,14 @@
 \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const float \& \hyperlink{class_boundaries_a266ff06f5e1ba1f5bc69ddf8c9506186}{at} (size\+\_\+t plane\+Pair\+Number, size\+\_\+t far\+Or\+Close) const
 \begin{DoxyCompactList}\small\item\em returns the distance from the origin to the bounding volume \end{DoxyCompactList}\item 
 \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float $\ast$ \hyperlink{class_boundaries_a76d14c4bc0572159b449b47e29987690}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)
-\begin{DoxyCompactList}\small\item\em operator \mbox{[}\mbox{]} \end{DoxyCompactList}\item 
-\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{class_boundaries_ac48b60bf0de75404bb222098a890f20c}{hit} (\hyperlink{class_ray}{Ray} \&ray, float(\&precom\+Puted)\mbox{[}2\mbox{]}\mbox{[}n\+Normals\mbox{]}, uint8\+\_\+t $\ast$plane\+Index=nullptr) const
-\begin{DoxyCompactList}\small\item\em hit test for a bounding volume \end{DoxyCompactList}\item 
-\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const float \& \hyperlink{class_boundaries_a2090322f8c1e807377baa18c3ddfa430}{at} (size\+\_\+t plane\+Pair\+Number, size\+\_\+t far\+Or\+Close) const
-\begin{DoxyCompactList}\small\item\em returns the distance from the origin to the bounding volume \end{DoxyCompactList}\item 
-\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float $\ast$ \hyperlink{class_boundaries_a76d14c4bc0572159b449b47e29987690}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)
 \begin{DoxyCompactList}\small\item\em operator \mbox{[}\mbox{]} \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const uint8\+\_\+t {\bfseries n\+Normals} = N\+O\+R\+M\+A\+LS\hypertarget{class_boundaries_abbb8df97539ca391f86e7c381ac8ff69}{}\label{class_boundaries_abbb8df97539ca391f86e7c381ac8ff69}
+static const uint8\+\_\+t {\bfseries n\+Normals} = N\+O\+R\+M\+A\+LS\hypertarget{class_boundaries_af0ee69c3dcc945e8e3eb5f5aa7210aae}{}\label{class_boundaries_af0ee69c3dcc945e8e3eb5f5aa7210aae}
 
 \item 
-static const uint8\+\_\+t {\bfseries n\+Plane\+Set} = N\+O\+R\+M\+A\+L\+\_\+\+S\+ET\hypertarget{class_boundaries_a49ff36a259249fb6bd32f59f2ffb3959}{}\label{class_boundaries_a49ff36a259249fb6bd32f59f2ffb3959}
+static const uint8\+\_\+t {\bfseries n\+Plane\+Set} = N\+O\+R\+M\+A\+L\+\_\+\+S\+ET\hypertarget{class_boundaries_aee71213c990abbe66a7fbc1f694c5ebb}{}\label{class_boundaries_aee71213c990abbe66a7fbc1f694c5ebb}
 
 \end{DoxyCompactItemize}
 
@@ -57,28 +51,6 @@ Here is the call graph for this function\+:
 \includegraphics[width=287pt]{class_boundaries_a266ff06f5e1ba1f5bc69ddf8c9506186_cgraph}
 \end{center}
 \end{figure}
-\index{Boundaries@{Boundaries}!at@{at}}
-\index{at@{at}!Boundaries@{Boundaries}}
-\subsubsection[{\texorpdfstring{at(size\+\_\+t plane\+Pair\+Number, size\+\_\+t far\+Or\+Close) const}{at(size\_t planePairNumber, size\_t farOrClose) const}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const float\& Boundaries\+::at (
-\begin{DoxyParamCaption}
-\item[{size\+\_\+t}]{plane\+Pair\+Number, }
-\item[{size\+\_\+t}]{far\+Or\+Close}
-\end{DoxyParamCaption}
-) const}\hypertarget{class_boundaries_a2090322f8c1e807377baa18c3ddfa430}{}\label{class_boundaries_a2090322f8c1e807377baa18c3ddfa430}
-
-
-returns the distance from the origin to the bounding volume 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em plane\+Pair\+Number} & -\/ a slab number to choose \\
-\hline
-\mbox{\tt in}  & {\em far\+Or\+Close} & -\/ choose a far or the closest bounding plane \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-const float\& -\/ a const link to the distance from the origin to the bounding volume 
-\end{DoxyReturn}
 \index{Boundaries@{Boundaries}!hit@{hit}}
 \index{hit@{hit}!Boundaries@{Boundaries}}
 \subsubsection[{\texorpdfstring{hit(\+Ray \&ray, float(\&precom\+Puted)[2][n\+Normals], uint8\+\_\+t $\ast$plane\+Index=nullptr) const}{hit(Ray \&ray, float(\&precomPuted)[2][nNormals], uint8\_t *planeIndex=nullptr) const}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool Boundaries\+::hit (
@@ -104,6 +76,14 @@ hit test for a bounding volume
 \begin{DoxyReturn}{Returns}
 bool -\/ if there was an intersection between a ray and the bounding volume 
 \end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{class_boundaries_ac48b60bf0de75404bb222098a890f20c_cgraph}
+\end{center}
+\end{figure}
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
@@ -112,50 +92,6 @@ Here is the caller graph for this function\+:
 \includegraphics[width=326pt]{class_boundaries_ac48b60bf0de75404bb222098a890f20c_icgraph}
 \end{center}
 \end{figure}
-\index{Boundaries@{Boundaries}!hit@{hit}}
-\index{hit@{hit}!Boundaries@{Boundaries}}
-\subsubsection[{\texorpdfstring{hit(\+Ray \&ray, float(\&precom\+Puted)[2][n\+Normals], uint8\+\_\+t $\ast$plane\+Index=nullptr) const}{hit(Ray \&ray, float(\&precomPuted)[2][nNormals], uint8\_t *planeIndex=nullptr) const}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool Boundaries\+::hit (
-\begin{DoxyParamCaption}
-\item[{{\bf Ray} \&}]{ray, }
-\item[{float(\&)}]{precom\+Puted\mbox{[}2\mbox{]}\mbox{[}n\+Normals\mbox{]}, }
-\item[{uint8\+\_\+t $\ast$}]{plane\+Index = {\ttfamily nullptr}}
-\end{DoxyParamCaption}
-) const}\hypertarget{class_boundaries_ac48b60bf0de75404bb222098a890f20c}{}\label{class_boundaries_ac48b60bf0de75404bb222098a890f20c}
-
-
-hit test for a bounding volume 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt out}  & {\em ray} & -\/ sets t\+Near and t\+Far in order to determine the shortest distance on the ray \\
-\hline
-\mbox{\tt in}  & {\em precomputed} & -\/ numerator and denominator to accelerate the shorted hit distance \\
-\hline
-\mbox{\tt out}  & {\em plane\+Index} & -\/ for displaying the bounding volume. That is debug needs. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-bool -\/ if there was an intersection between a ray and the bounding volume 
-\end{DoxyReturn}
-\index{Boundaries@{Boundaries}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
-\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Boundaries@{Boundaries}}
-\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i)}{operator[](size\_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float$\ast$ Boundaries\+::operator\mbox{[}$\,$\mbox{]} (
-\begin{DoxyParamCaption}
-\item[{size\+\_\+t}]{i}
-\end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_boundaries_a76d14c4bc0572159b449b47e29987690}{}\label{class_boundaries_a76d14c4bc0572159b449b47e29987690}
-
-
-operator \mbox{[}\mbox{]} 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em i} & -\/ choose a far or the closest bounding plane \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-float $\ast$ -\/ a pointer to distances 
-\end{DoxyReturn}
 \index{Boundaries@{Boundaries}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Boundaries@{Boundaries}}
 \subsubsection[{\texorpdfstring{operator[](size\+\_\+t i)}{operator[](size\_t i)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float$\ast$ Boundaries\+::operator\mbox{[}$\,$\mbox{]} (
@@ -179,5 +115,5 @@ float $\ast$ -\/ a pointer to distances
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/god/cuda-\/workspace/r\+T\+Tracer/include/\hyperlink{r_t_tracer_2include_2acceleration_8cuh}{acceleration.\+cuh}\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/\hyperlink{acceleration_8cuh}{acceleration.\+cuh}\item 
 /home/god/cuda-\/workspace/r\+T\+Tracer/source/acceleration.\+cu\end{DoxyCompactItemize}
