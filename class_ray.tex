@@ -1,0 +1,77 @@
+\hypertarget{class_ray}{}\section{Ray Class Reference}
+\label{class_ray}\index{Ray@{Ray}}
+
+
+Collaboration diagram for Ray\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_ray__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Ray} (const \hyperlink{class_vec3}{Vec3f} \&o, const \hyperlink{class_vec3}{Vec3f} \&d, const Ray\+Type \&ray\+Type=P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY)\hypertarget{class_ray_a70dc24e77fd2f372f64481b84352ea79}{}\label{class_ray_a70dc24e77fd2f372f64481b84352ea79}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Ray} (const \hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_a6d8a9d6b5b86ab607f5713a88943095c}{}\label{class_ray_a6d8a9d6b5b86ab607f5713a88943095c}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_ray}{Ray} \& {\bfseries operator=} (const \hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_ae5f0c2eebb56ef7f3e4d43a49bfc94a7}{}\label{class_ray_ae5f0c2eebb56ef7f3e4d43a49bfc94a7}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bfseries swap} (\hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_ac55e80131f5422dd969190ebb56a4be7}{}\label{class_ray_ac55e80131f5422dd969190ebb56a4be7}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float4 {\bfseries direction} ()\hypertarget{class_ray_afa09f7613e0f5e5e7e0d1093ea83df6b}{}\label{class_ray_afa09f7613e0f5e5e7e0d1093ea83df6b}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Ray} (const \hyperlink{class_vec3}{Vec3f} \&o, const \hyperlink{class_vec3}{Vec3f} \&d, const Ray\+Type \&ray\+Type=P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY)\hypertarget{class_ray_a70dc24e77fd2f372f64481b84352ea79}{}\label{class_ray_a70dc24e77fd2f372f64481b84352ea79}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Ray} (const \hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_a6d8a9d6b5b86ab607f5713a88943095c}{}\label{class_ray_a6d8a9d6b5b86ab607f5713a88943095c}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_ray}{Ray} \& {\bfseries operator=} (const \hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_ae5f0c2eebb56ef7f3e4d43a49bfc94a7}{}\label{class_ray_ae5f0c2eebb56ef7f3e4d43a49bfc94a7}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bfseries swap} (\hyperlink{class_ray}{Ray} \&ray)\hypertarget{class_ray_ac55e80131f5422dd969190ebb56a4be7}{}\label{class_ray_ac55e80131f5422dd969190ebb56a4be7}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float4 {\bfseries direction} ()\hypertarget{class_ray_afa09f7613e0f5e5e7e0d1093ea83df6b}{}\label{class_ray_afa09f7613e0f5e5e7e0d1093ea83df6b}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vec3}{Vec3f} {\bfseries orig}\hypertarget{class_ray_a83060ce4752b7178322491c3ba060aeb}{}\label{class_ray_a83060ce4752b7178322491c3ba060aeb}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} {\bfseries dir}\hypertarget{class_ray_abb6aec8e6d0ce79e31ccaf7cc0bd2f5e}{}\label{class_ray_abb6aec8e6d0ce79e31ccaf7cc0bd2f5e}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} {\bfseries inverse\+Dir}\hypertarget{class_ray_a4aeb023e811e12834cb8e1daaf1e3db4}{}\label{class_ray_a4aeb023e811e12834cb8e1daaf1e3db4}
+
+\item 
+float {\bfseries t\+Min}\hypertarget{class_ray_a79bb8e0202bc33a3035b59b0cc25716d}{}\label{class_ray_a79bb8e0202bc33a3035b59b0cc25716d}
+
+\item 
+float {\bfseries t\+Max}\hypertarget{class_ray_a02e897e4b9c32cf86b7a28b44655b991}{}\label{class_ray_a02e897e4b9c32cf86b7a28b44655b991}
+
+\item 
+float {\bfseries t}\hypertarget{class_ray_a4ec5a9098b620bda59d15b0a4f99d454}{}\label{class_ray_a4ec5a9098b620bda59d15b0a4f99d454}
+
+\item 
+float {\bfseries t\+Nearest}\hypertarget{class_ray_ac729496eee350d328c4bff50b8235baf}{}\label{class_ray_ac729496eee350d328c4bff50b8235baf}
+
+\item 
+Ray\+Type {\bfseries ray\+Type}\hypertarget{class_ray_a53798941244349eeb1b61d9a3cef8425}{}\label{class_ray_a53798941244349eeb1b61d9a3cef8425}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/\hyperlink{r_t_tracer_2include_2geom_8cuh}{geom.\+cuh}\end{DoxyCompactItemize}

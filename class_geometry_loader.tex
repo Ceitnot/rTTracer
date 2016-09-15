@@ -1,0 +1,368 @@
+\hypertarget{class_geometry_loader}{}\section{Geometry\+Loader$<$ Objects\+Type, Bounding\+Volume\+Type $>$ Class Template Reference}
+\label{class_geometry_loader}\index{Geometry\+Loader$<$ Objects\+Type, Bounding\+Volume\+Type $>$@{Geometry\+Loader$<$ Objects\+Type, Bounding\+Volume\+Type $>$}}
+
+
+Collaboration diagram for Geometry\+Loader$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geometry_loader__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Geometry\+Loader} (const \hyperlink{class_geometry_loader}{Geometry\+Loader} \&utilities)\hypertarget{class_geometry_loader_a9c9114a5b074611c21bed13b4a4e5020}{}\label{class_geometry_loader_a9c9114a5b074611c21bed13b4a4e5020}
+
+\item 
+\hyperlink{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}{Geometry\+Loader} (const std\+::vector$<$ std\+::string $>$ \&filenames, const std\+::vector$<$ \hyperlink{class_square_matrix4}{Square\+Matrix4f} $>$ \&model, const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights, const std\+::vector$<$ \hyperlink{struct_appearence}{Appearence} $>$ \&appearences)
+\item 
+\hyperlink{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}{Geometry\+Loader} (const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights)
+\item 
+{\bfseries Geometry\+Loader} (const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{class_host_object}{Host\+Object} $>$$>$ \&host\+\_\+obj, const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights, const std\+::vector$<$ \hyperlink{struct_appearence}{Appearence} $>$ \&appearences)\hypertarget{class_geometry_loader_a0fba129ffcc51352ce49d22d30e83732}{}\label{class_geometry_loader_a0fba129ffcc51352ce49d22d30e83732}
+
+\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}{operator()} (const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&transform, const int \&begin=0, const int \&end=1)
+\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}{operator()} (int object\+Number)
+\item 
+void \hyperlink{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}{load\+Meshes} (const std\+::vector$<$ std\+::string $>$ \&filenames)
+\item 
+void \hyperlink{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}{run\+Demo} ()
+\item 
+void \hyperlink{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}{pack\+Mesh} ()\hypertarget{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}{}\label{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}
+
+\begin{DoxyCompactList}\small\item\em Function copies meshes to device memory and initializes wrapper objects. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Procedural\+Object\+Type $>$ }\\void \hyperlink{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}{pack\+Procedural} (const Procedural\+Object\+Type \&object, const \hyperlink{struct_polymorphic}{Polymorphic} \&functions, const \hyperlink{struct_appearence}{Appearence} \&appearence)
+\begin{DoxyCompactList}\small\item\em Function copies implicit objects to device memory and initializes wrapper objects. \end{DoxyCompactList}\item 
+void {\bfseries pack\+Procedural} (const \hyperlink{struct_polymorphic}{Polymorphic} \&functions, const \hyperlink{struct_appearence}{Appearence} \&appearence, const \hyperlink{class_host_object}{Host\+Object} \&object)\hypertarget{class_geometry_loader_a1d2eddd9fd6dfd98435ca4c2d618449e}{}\label{class_geometry_loader_a1d2eddd9fd6dfd98435ca4c2d618449e}
+
+\item 
+void \hyperlink{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}{pack\+Scene} ()\hypertarget{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}{}\label{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}
+
+\begin{DoxyCompactList}\small\item\em Function wrapper objects and light objects to the \hyperlink{class_object_box}{Object\+Box} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}{get} ()
+\item 
+{\bfseries Geometry\+Loader} (const \hyperlink{class_geometry_loader}{Geometry\+Loader} \&utilities)\hypertarget{class_geometry_loader_a9c9114a5b074611c21bed13b4a4e5020}{}\label{class_geometry_loader_a9c9114a5b074611c21bed13b4a4e5020}
+
+\item 
+\hyperlink{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}{Geometry\+Loader} (const std\+::vector$<$ std\+::string $>$ \&filenames, const std\+::vector$<$ \hyperlink{class_square_matrix4}{Square\+Matrix4f} $>$ \&model, const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights, const std\+::vector$<$ \hyperlink{struct_appearence}{Appearence} $>$ \&appearences)
+\item 
+\hyperlink{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}{Geometry\+Loader} (const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights)
+\item 
+{\bfseries Geometry\+Loader} (const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \hyperlink{class_host_object}{Host\+Object} $>$$>$ \&host\+\_\+obj, const std\+::vector$<$ \hyperlink{class_i_light}{I\+Light} $>$ \&lights, const std\+::vector$<$ \hyperlink{struct_appearence}{Appearence} $>$ \&appearences)\hypertarget{class_geometry_loader_a0fba129ffcc51352ce49d22d30e83732}{}\label{class_geometry_loader_a0fba129ffcc51352ce49d22d30e83732}
+
+\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}{operator()} (const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&transform, const int \&begin=0, const int \&end=1)
+\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}{operator()} (int object\+Number)
+\item 
+void \hyperlink{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}{load\+Meshes} (const std\+::vector$<$ std\+::string $>$ \&filenames)
+\item 
+void \hyperlink{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}{run\+Demo} ()
+\item 
+void \hyperlink{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}{pack\+Mesh} ()\hypertarget{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}{}\label{class_geometry_loader_a9ee90083c2f62768f8a2c613fdcf0715}
+
+\begin{DoxyCompactList}\small\item\em Function copies meshes to device memory and initializes wrapper objects. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Procedural\+Object\+Type $>$ }\\void \hyperlink{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}{pack\+Procedural} (const Procedural\+Object\+Type \&object, const \hyperlink{struct_polymorphic}{Polymorphic} \&functions, const \hyperlink{struct_appearence}{Appearence} \&appearence)
+\begin{DoxyCompactList}\small\item\em Function copies implicit objects to device memory and initializes wrapper objects. \end{DoxyCompactList}\item 
+void {\bfseries pack\+Procedural} (const \hyperlink{struct_polymorphic}{Polymorphic} \&functions, const \hyperlink{struct_appearence}{Appearence} \&appearence, const \hyperlink{class_host_object}{Host\+Object} \&object)\hypertarget{class_geometry_loader_a1d2eddd9fd6dfd98435ca4c2d618449e}{}\label{class_geometry_loader_a1d2eddd9fd6dfd98435ca4c2d618449e}
+
+\item 
+void \hyperlink{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}{pack\+Scene} ()\hypertarget{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}{}\label{class_geometry_loader_a11a589427dc744b17ccc5085ec07a338}
+
+\begin{DoxyCompactList}\small\item\em Function wrapper objects and light objects to the \hyperlink{class_object_box}{Object\+Box} instance. \end{DoxyCompactList}\item 
+\hyperlink{class_object_box}{Object\+Box} \& \hyperlink{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}{get} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_object_box}{Object\+Box} {\bfseries scene}\hypertarget{class_geometry_loader_a3e040be4450444adddd72735905cb38e}{}\label{class_geometry_loader_a3e040be4450444adddd72735905cb38e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{Geometry\+Loader(const std\+::vector$<$ std\+::string $>$ \&filenames, const std\+::vector$<$ Square\+Matrix4f $>$ \&model, const std\+::vector$<$ I\+Light $>$ \&lights, const std\+::vector$<$ Appearence $>$ \&appearences)}{GeometryLoader(const std::vector< std::string > \&filenames, const std::vector< SquareMatrix4f > \&model, const std::vector< ILight > \&lights, const std::vector< Appearence > \&appearences)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::{\bf Geometry\+Loader} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{filenames, }
+\item[{const std\+::vector$<$ {\bf Square\+Matrix4f} $>$ \&}]{model, }
+\item[{const std\+::vector$<$ {\bf I\+Light} $>$ \&}]{lights, }
+\item[{const std\+::vector$<$ {\bf Appearence} $>$ \&}]{appearences}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}{}\label{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em -\/} & filenames -\/ storage for filenames with meshes. Each file must consist of the only one mesh. \\
+\hline
+\mbox{\tt in}  & {\em -\/} & model -\/ object-\/to-\/world matrix storage, each for every mesh transformation. \\
+\hline
+\mbox{\tt in}  & {\em -\/} & lights -\/ storage for lights of every implemented kind \\
+\hline
+\mbox{\tt in}  & {\em -\/} & appearences -\/ object shading properties \\
+\hline
+\end{DoxyParams}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{Geometry\+Loader(const std\+::vector$<$ I\+Light $>$ \&lights)}{GeometryLoader(const std::vector< ILight > \&lights)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::{\bf Geometry\+Loader} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf I\+Light} $>$ \&}]{lights}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}{}\label{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lights} & -\/ storage for lights of every implemented kind \\
+\hline
+\end{DoxyParams}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{Geometry\+Loader(const std\+::vector$<$ std\+::string $>$ \&filenames, const std\+::vector$<$ Square\+Matrix4f $>$ \&model, const std\+::vector$<$ I\+Light $>$ \&lights, const std\+::vector$<$ Appearence $>$ \&appearences)}{GeometryLoader(const std::vector< std::string > \&filenames, const std::vector< SquareMatrix4f > \&model, const std::vector< ILight > \&lights, const std::vector< Appearence > \&appearences)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::{\bf Geometry\+Loader} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{filenames, }
+\item[{const std\+::vector$<$ {\bf Square\+Matrix4f} $>$ \&}]{model, }
+\item[{const std\+::vector$<$ {\bf I\+Light} $>$ \&}]{lights, }
+\item[{const std\+::vector$<$ {\bf Appearence} $>$ \&}]{appearences}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}{}\label{class_geometry_loader_acdbb37e0f355aec4bd1c43315ca062de}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em -\/} & filenames -\/ storage for filenames with meshes. Each file must consist of the only one mesh. \\
+\hline
+\mbox{\tt in}  & {\em -\/} & model -\/ object-\/to-\/world matrix storage, each for every mesh transformation. \\
+\hline
+\mbox{\tt in}  & {\em -\/} & lights -\/ storage for lights of every implemented kind \\
+\hline
+\mbox{\tt in}  & {\em -\/} & appearences -\/ object shading properties \\
+\hline
+\end{DoxyParams}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\index{Geometry\+Loader@{Geometry\+Loader}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{Geometry\+Loader(const std\+::vector$<$ I\+Light $>$ \&lights)}{GeometryLoader(const std::vector< ILight > \&lights)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::{\bf Geometry\+Loader} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf I\+Light} $>$ \&}]{lights}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}{}\label{class_geometry_loader_ad1e31702fc39f0fcc216beca12967872}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em lights} & -\/ storage for lights of every implemented kind \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Geometry\+Loader@{Geometry\+Loader}!get@{get}}
+\index{get@{get}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}{}\label{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_object_box}{Object\+Box} instance. 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!get@{get}}
+\index{get@{get}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{get()}{get()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}{}\label{class_geometry_loader_af3716f894c24e1662ffbbd48e0575bcd}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_object_box}{Object\+Box} instance. 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!load\+Meshes@{load\+Meshes}}
+\index{load\+Meshes@{load\+Meshes}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{load\+Meshes(const std\+::vector$<$ std\+::string $>$ \&filenames)}{loadMeshes(const std::vector< std::string > \&filenames)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::load\+Meshes (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{filenames}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}{}\label{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}
+Function loads meshes from file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filenames} & \\
+\hline
+\end{DoxyParams}
+\index{Geometry\+Loader@{Geometry\+Loader}!load\+Meshes@{load\+Meshes}}
+\index{load\+Meshes@{load\+Meshes}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{load\+Meshes(const std\+::vector$<$ std\+::string $>$ \&filenames)}{loadMeshes(const std::vector< std::string > \&filenames)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::load\+Meshes (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{filenames}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}{}\label{class_geometry_loader_a41504f514cf9aed65d385e401ae2de22}
+Function loads meshes from file. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em filenames} & \\
+\hline
+\end{DoxyParams}
+\index{Geometry\+Loader@{Geometry\+Loader}!operator()@{operator()}}
+\index{operator()@{operator()}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{operator()(const Square\+Matrix4f \&transform, const int \&begin=0, const int \&end=1)}{operator()(const SquareMatrix4f \&transform, const int \&begin=0, const int \&end=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Square\+Matrix4f} \&}]{transform, }
+\item[{const int \&}]{begin = {\ttfamily 0}, }
+\item[{const int \&}]{end = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}{}\label{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}
+1) Applies transformation matrix to the mesh vertices.~\newline
+ 2) Recomputes bounding boundaries. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & -\/ a new transformation matrix \\
+\hline
+\mbox{\tt in}  & {\em begin} & -\/ the first point to be transformed \\
+\hline
+\mbox{\tt in}  & {\em end} & -\/ the point after the last one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ \hyperlink{class_object_box}{Object\+Box} wrapper of new scene considering transformations 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!operator()@{operator()}}
+\index{operator()@{operator()}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{operator()(const Square\+Matrix4f \&transform, const int \&begin=0, const int \&end=1)}{operator()(const SquareMatrix4f \&transform, const int \&begin=0, const int \&end=1)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Square\+Matrix4f} \&}]{transform, }
+\item[{const int \&}]{begin = {\ttfamily 0}, }
+\item[{const int \&}]{end = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}{}\label{class_geometry_loader_a99722ce01101349a6c792e87cc488d36}
+1) Applies transformation matrix to the mesh vertices.~\newline
+ 2) Recomputes bounding boundaries. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em transform} & -\/ a new transformation matrix \\
+\hline
+\mbox{\tt in}  & {\em begin} & -\/ the first point to be transformed \\
+\hline
+\mbox{\tt in}  & {\em end} & -\/ the point after the last one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/ \hyperlink{class_object_box}{Object\+Box} wrapper of new scene considering transformations 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!operator()@{operator()}}
+\index{operator()@{operator()}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{operator()(int object\+Number)}{operator()(int objectNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{object\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}{}\label{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}
+Function recomputes a bounding boundaries of a particular object. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_object_box}{Object\+Box} wrapper of new scene considering transformations 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!operator()@{operator()}}
+\index{operator()@{operator()}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{operator()(int object\+Number)}{operator()(int objectNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ {\bf Object\+Box}\& {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{object\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}{}\label{class_geometry_loader_a71c1d727c3939d3e4de530d8a4504687}
+Function recomputes a bounding boundaries of a particular object. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_object_box}{Object\+Box} wrapper of new scene considering transformations 
+\end{DoxyReturn}
+\index{Geometry\+Loader@{Geometry\+Loader}!pack\+Procedural@{pack\+Procedural}}
+\index{pack\+Procedural@{pack\+Procedural}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{pack\+Procedural(const Procedural\+Object\+Type \&object, const Polymorphic \&functions, const Appearence \&appearence)}{packProcedural(const ProceduralObjectType \&object, const Polymorphic \&functions, const Appearence \&appearence)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ template$<$class Procedural\+Object\+Type $>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::pack\+Procedural (
+\begin{DoxyParamCaption}
+\item[{const Procedural\+Object\+Type \&}]{object, }
+\item[{const {\bf Polymorphic} \&}]{functions, }
+\item[{const {\bf Appearence} \&}]{appearence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}{}\label{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}
+
+
+Function copies implicit objects to device memory and initializes wrapper objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ an instance of a particular object \\
+\hline
+\mbox{\tt in}  & {\em functions} & -\/ instance with static function pointers \\
+\hline
+\mbox{\tt in}  & {\em appearences} & -\/ object shading properties \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9_cgraph}
+\end{center}
+\end{figure}
+\index{Geometry\+Loader@{Geometry\+Loader}!pack\+Procedural@{pack\+Procedural}}
+\index{pack\+Procedural@{pack\+Procedural}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{pack\+Procedural(const Procedural\+Object\+Type \&object, const Polymorphic \&functions, const Appearence \&appearence)}{packProcedural(const ProceduralObjectType \&object, const Polymorphic \&functions, const Appearence \&appearence)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ template$<$class Procedural\+Object\+Type $>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::pack\+Procedural (
+\begin{DoxyParamCaption}
+\item[{const Procedural\+Object\+Type \&}]{object, }
+\item[{const {\bf Polymorphic} \&}]{functions, }
+\item[{const {\bf Appearence} \&}]{appearence}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}{}\label{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9}
+
+
+Function copies implicit objects to device memory and initializes wrapper objects. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ an instance of a particular object \\
+\hline
+\mbox{\tt in}  & {\em functions} & -\/ instance with static function pointers \\
+\hline
+\mbox{\tt in}  & {\em appearences} & -\/ object shading properties \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_geometry_loader_a175f8a4496b0b4d183f8eba7a2ac38f9_cgraph}
+\end{center}
+\end{figure}
+\index{Geometry\+Loader@{Geometry\+Loader}!run\+Demo@{run\+Demo}}
+\index{run\+Demo@{run\+Demo}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{run\+Demo()}{runDemo()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::run\+Demo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}{}\label{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}
+Function loads implicit objects. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6_cgraph}
+\end{center}
+\end{figure}
+\index{Geometry\+Loader@{Geometry\+Loader}!run\+Demo@{run\+Demo}}
+\index{run\+Demo@{run\+Demo}!Geometry\+Loader@{Geometry\+Loader}}
+\subsubsection[{\texorpdfstring{run\+Demo()}{runDemo()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Objects\+Type, class Bounding\+Volume\+Type$>$ void {\bf Geometry\+Loader}$<$ Objects\+Type, Bounding\+Volume\+Type $>$\+::run\+Demo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}{}\label{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6}
+Function loads implicit objects. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_geometry_loader_ae12a7d2e1dddd53e79cf42edf7ce59d6_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/geometry\+Loader.\+cuh\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{class_square_matrix4}{}\section{Square\+Matrix4$<$ T $>$ Class Template Reference}
+\label{class_square_matrix4}\index{Square\+Matrix4$<$ T $>$@{Square\+Matrix4$<$ T $>$}}
+
+
+Collaboration diagram for Square\+Matrix4$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{class_square_matrix4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Square\+Matrix4} (T a, T b, T c, T d, T e, T f, T g, T h, T i, T j, T k, T l, T m, T n, T o, T p)\hypertarget{class_square_matrix4_a9182db1e12bd3ff20d7ccdf5ed25c156}{}\label{class_square_matrix4_a9182db1e12bd3ff20d7ccdf5ed25c156}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Square\+Matrix4} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&matrix)\hypertarget{class_square_matrix4_a3d2f4a1135af79f7e86e02426abe2319}{}\label{class_square_matrix4_a3d2f4a1135af79f7e86e02426abe2319}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const T $\ast$ {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i) const\hypertarget{class_square_matrix4_af20a47c9f0b1eada3e31273d2cb76de9}{}\label{class_square_matrix4_af20a47c9f0b1eada3e31273d2cb76de9}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T $\ast$ {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i)\hypertarget{class_square_matrix4_ac748c208ebdb0090978832fae8836f0a}{}\label{class_square_matrix4_ac748c208ebdb0090978832fae8836f0a}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} {\bfseries operator $\ast$} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&v) const\hypertarget{class_square_matrix4_a7cfeb42d0147390448c69b6f4ba74ee0}{}\label{class_square_matrix4_a7cfeb42d0147390448c69b6f4ba74ee0}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& {\bfseries operator $\ast$=} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&v) const\hypertarget{class_square_matrix4_af44d511c4d55102c4f72d99692345332}{}\label{class_square_matrix4_af44d511c4d55102c4f72d99692345332}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& {\bfseries operator=} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&matrix)\hypertarget{class_square_matrix4_a48e4130c7dc65e2ef42be5e4dbbab914}{}\label{class_square_matrix4_a48e4130c7dc65e2ef42be5e4dbbab914}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \hyperlink{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}{transposed} () const
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& \hyperlink{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}{transpose} ()\hypertarget{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}{}\label{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}
+
+\begin{DoxyCompactList}\small\item\em transpose itself \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{class_square_matrix4_a96f083743422ca964d865b1034e608b4}{mul\+Point\+Mat} (const \hyperlink{class_vec3}{Vec3} \&src, \hyperlink{class_vec3}{Vec3} \&dst) const
+\begin{DoxyCompactList}\small\item\em multiply point by matrix \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{class_square_matrix4_a559765a38296c2949976c00347098fb0}{mul\+Vec\+Mat} (const \hyperlink{class_vec3}{Vec3} \&src, \hyperlink{class_vec3}{Vec3} \&dst) const
+\begin{DoxyCompactList}\small\item\em multiply vector by matrix \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} {\bfseries inverse} () const\hypertarget{class_square_matrix4_a5af6eeea8a8080858fc607a7e6a25c79}{}\label{class_square_matrix4_a5af6eeea8a8080858fc607a7e6a25c79}
+
+\item 
+const \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ T $>$ \& \hyperlink{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}{invert} ()\hypertarget{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}{}\label{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}
+
+\begin{DoxyCompactList}\small\item\em set current matrix to its inverse \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Square\+Matrix4} (T a, T b, T c, T d, T e, T f, T g, T h, T i, T j, T k, T l, T m, T n, T o, T p)\hypertarget{class_square_matrix4_a9182db1e12bd3ff20d7ccdf5ed25c156}{}\label{class_square_matrix4_a9182db1e12bd3ff20d7ccdf5ed25c156}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Square\+Matrix4} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&matrix)\hypertarget{class_square_matrix4_a3d2f4a1135af79f7e86e02426abe2319}{}\label{class_square_matrix4_a3d2f4a1135af79f7e86e02426abe2319}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const T $\ast$ {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i) const\hypertarget{class_square_matrix4_af20a47c9f0b1eada3e31273d2cb76de9}{}\label{class_square_matrix4_af20a47c9f0b1eada3e31273d2cb76de9}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ T $\ast$ {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i)\hypertarget{class_square_matrix4_ac748c208ebdb0090978832fae8836f0a}{}\label{class_square_matrix4_ac748c208ebdb0090978832fae8836f0a}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} {\bfseries operator $\ast$} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&v) const\hypertarget{class_square_matrix4_a7cfeb42d0147390448c69b6f4ba74ee0}{}\label{class_square_matrix4_a7cfeb42d0147390448c69b6f4ba74ee0}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& {\bfseries operator $\ast$=} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&v) const\hypertarget{class_square_matrix4_af44d511c4d55102c4f72d99692345332}{}\label{class_square_matrix4_af44d511c4d55102c4f72d99692345332}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& {\bfseries operator=} (const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&matrix)\hypertarget{class_square_matrix4_a48e4130c7dc65e2ef42be5e4dbbab914}{}\label{class_square_matrix4_a48e4130c7dc65e2ef42be5e4dbbab914}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \hyperlink{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}{transposed} () const
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} \& \hyperlink{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}{transpose} ()\hypertarget{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}{}\label{class_square_matrix4_a7d6f675b8ae538a7c53fe1e8c390e8b3}
+
+\begin{DoxyCompactList}\small\item\em transpose itself \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{class_square_matrix4_a96f083743422ca964d865b1034e608b4}{mul\+Point\+Mat} (const \hyperlink{class_vec3}{Vec3} \&src, \hyperlink{class_vec3}{Vec3} \&dst) const
+\begin{DoxyCompactList}\small\item\em multiply point by matrix \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{class_square_matrix4_a559765a38296c2949976c00347098fb0}{mul\+Vec\+Mat} (const \hyperlink{class_vec3}{Vec3} \&src, \hyperlink{class_vec3}{Vec3} \&dst) const
+\begin{DoxyCompactList}\small\item\em multiply vector by matrix \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4} {\bfseries inverse} () const\hypertarget{class_square_matrix4_a5af6eeea8a8080858fc607a7e6a25c79}{}\label{class_square_matrix4_a5af6eeea8a8080858fc607a7e6a25c79}
+
+\item 
+const \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ T $>$ \& \hyperlink{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}{invert} ()\hypertarget{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}{}\label{class_square_matrix4_acbf913e66c1c7b846bc25d7b2c0df31d}
+
+\begin{DoxyCompactList}\small\item\em set current matrix to its inverse \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bfseries multiply} (const \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ T $>$ \&a, const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&b, \hyperlink{class_square_matrix4}{Square\+Matrix4} \&c)\hypertarget{class_square_matrix4_a8d4381e883a6e4a7d7e2813ebc2a7af3}{}\label{class_square_matrix4_a8d4381e883a6e4a7d7e2813ebc2a7af3}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ static \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bfseries multiply} (const \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ T $>$ \&a, const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&b, \hyperlink{class_square_matrix4}{Square\+Matrix4} \&c)\hypertarget{class_square_matrix4_a8d4381e883a6e4a7d7e2813ebc2a7af3}{}\label{class_square_matrix4_a8d4381e883a6e4a7d7e2813ebc2a7af3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T {\bfseries x} \mbox{[}4\mbox{]}\mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{class_square_matrix4}{Square\+Matrix4} {\bfseries Identity} = \hyperlink{class_square_matrix4}{Square\+Matrix4f}()\hypertarget{class_square_matrix4_a17173c29287b7d4206d9bfddb2ad8d0e}{}\label{class_square_matrix4_a17173c29287b7d4206d9bfddb2ad8d0e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&s, const \hyperlink{class_square_matrix4}{Square\+Matrix4} \&m)\hypertarget{class_square_matrix4_a548d172ab42d8b780f4c8daaf221a43e}{}\label{class_square_matrix4_a548d172ab42d8b780f4c8daaf221a43e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Square\+Matrix4@{Square\+Matrix4}!mul\+Point\+Mat@{mul\+Point\+Mat}}
+\index{mul\+Point\+Mat@{mul\+Point\+Mat}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{mul\+Point\+Mat(const Vec3 \&src, Vec3 \&dst) const}{mulPointMat(const Vec3 \&src, Vec3 \&dst) const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bf Square\+Matrix4}$<$ T $>$\+::mul\+Point\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{src, }
+\item[{{\bf Vec3} \&}]{dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a96f083743422ca964d865b1034e608b4}{}\label{class_square_matrix4_a96f083743422ca964d865b1034e608b4}
+
+
+multiply point by matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & -\/ vector multyplied by a matrix \\
+\hline
+\mbox{\tt out}  & {\em dst} & -\/ output vector \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_square_matrix4_a96f083743422ca964d865b1034e608b4_icgraph}
+\end{center}
+\end{figure}
+\index{Square\+Matrix4@{Square\+Matrix4}!mul\+Point\+Mat@{mul\+Point\+Mat}}
+\index{mul\+Point\+Mat@{mul\+Point\+Mat}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{mul\+Point\+Mat(const Vec3 \&src, Vec3 \&dst) const}{mulPointMat(const Vec3 \&src, Vec3 \&dst) const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bf Square\+Matrix4}$<$ T $>$\+::mul\+Point\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{src, }
+\item[{{\bf Vec3} \&}]{dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a96f083743422ca964d865b1034e608b4}{}\label{class_square_matrix4_a96f083743422ca964d865b1034e608b4}
+
+
+multiply point by matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & -\/ vector multyplied by a matrix \\
+\hline
+\mbox{\tt out}  & {\em dst} & -\/ output vector \\
+\hline
+\end{DoxyParams}
+\index{Square\+Matrix4@{Square\+Matrix4}!mul\+Vec\+Mat@{mul\+Vec\+Mat}}
+\index{mul\+Vec\+Mat@{mul\+Vec\+Mat}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{mul\+Vec\+Mat(const Vec3 \&src, Vec3 \&dst) const}{mulVecMat(const Vec3 \&src, Vec3 \&dst) const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bf Square\+Matrix4}$<$ T $>$\+::mul\+Vec\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{src, }
+\item[{{\bf Vec3} \&}]{dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a559765a38296c2949976c00347098fb0}{}\label{class_square_matrix4_a559765a38296c2949976c00347098fb0}
+
+
+multiply vector by matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & -\/ vector multyplied by a matrix \\
+\hline
+\mbox{\tt out}  & {\em dst} & -\/ output vector \\
+\hline
+\end{DoxyParams}
+\index{Square\+Matrix4@{Square\+Matrix4}!mul\+Vec\+Mat@{mul\+Vec\+Mat}}
+\index{mul\+Vec\+Mat@{mul\+Vec\+Mat}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{mul\+Vec\+Mat(const Vec3 \&src, Vec3 \&dst) const}{mulVecMat(const Vec3 \&src, Vec3 \&dst) const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void {\bf Square\+Matrix4}$<$ T $>$\+::mul\+Vec\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec3} \&}]{src, }
+\item[{{\bf Vec3} \&}]{dst}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a559765a38296c2949976c00347098fb0}{}\label{class_square_matrix4_a559765a38296c2949976c00347098fb0}
+
+
+multiply vector by matrix 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em src} & -\/ vector multyplied by a matrix \\
+\hline
+\mbox{\tt out}  & {\em dst} & -\/ output vector \\
+\hline
+\end{DoxyParams}
+\index{Square\+Matrix4@{Square\+Matrix4}!transposed@{transposed}}
+\index{transposed@{transposed}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{transposed() const}{transposed() const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Square\+Matrix4} {\bf Square\+Matrix4}$<$ T $>$\+::transposed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}{}\label{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}
+return a transposed copy of the current matrix as a new matrix \index{Square\+Matrix4@{Square\+Matrix4}!transposed@{transposed}}
+\index{transposed@{transposed}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{transposed() const}{transposed() const}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Square\+Matrix4} {\bf Square\+Matrix4}$<$ T $>$\+::transposed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}{}\label{class_square_matrix4_a23f36c4b337c5b238b4d3fae04e6f2f0}
+return a transposed copy of the current matrix as a new matrix 
+
+\subsection{Member Data Documentation}
+\index{Square\+Matrix4@{Square\+Matrix4}!x@{x}}
+\index{x@{x}!Square\+Matrix4@{Square\+Matrix4}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf Square\+Matrix4}$<$ T $>$\+::x}\hypertarget{class_square_matrix4_a8cd2e4d89a53a6cb802606054fb0c1ff}{}\label{class_square_matrix4_a8cd2e4d89a53a6cb802606054fb0c1ff}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{ \{1,0,0,0\}
+                 ,\{0,1,0,0\}
+                 ,\{0,0,1,0\}
+                 ,\{0,0,0,1\} \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/\hyperlink{r_t_tracer_2include_2geom_8cuh}{geom.\+cuh}\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/source/main.\+cu\end{DoxyCompactItemize}

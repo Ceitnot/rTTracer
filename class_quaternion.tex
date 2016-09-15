@@ -1,0 +1,62 @@
+\hypertarget{class_quaternion}{}\section{Quaternion Class Reference}
+\label{class_quaternion}\index{Quaternion@{Quaternion}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Quaternion} (float x, float y, float z, float w)\hypertarget{class_quaternion_a1a4bd86f9d61fd86784c4c0242706f71}{}\label{class_quaternion_a1a4bd86f9d61fd86784c4c0242706f71}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float {\bfseries length} ()\hypertarget{class_quaternion_a78a3e8c21812d2311790df5152e3c139}{}\label{class_quaternion_a78a3e8c21812d2311790df5152e3c139}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} {\bfseries Normalize} ()\hypertarget{class_quaternion_a90a71b875a7bc6e705e829805e748184}{}\label{class_quaternion_a90a71b875a7bc6e705e829805e748184}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4f} {\bfseries to\+Matrix} ()\hypertarget{class_quaternion_a5474d0118b84350ddbd163bdd7ff1e60}{}\label{class_quaternion_a5474d0118b84350ddbd163bdd7ff1e60}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} \hyperlink{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}{conjugate} ()
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Quaternion} (float x, float y, float z, float w)\hypertarget{class_quaternion_a1a4bd86f9d61fd86784c4c0242706f71}{}\label{class_quaternion_a1a4bd86f9d61fd86784c4c0242706f71}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float {\bfseries length} ()\hypertarget{class_quaternion_a78a3e8c21812d2311790df5152e3c139}{}\label{class_quaternion_a78a3e8c21812d2311790df5152e3c139}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} {\bfseries Normalize} ()\hypertarget{class_quaternion_a90a71b875a7bc6e705e829805e748184}{}\label{class_quaternion_a90a71b875a7bc6e705e829805e748184}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_square_matrix4}{Square\+Matrix4f} {\bfseries to\+Matrix} ()\hypertarget{class_quaternion_a5474d0118b84350ddbd163bdd7ff1e60}{}\label{class_quaternion_a5474d0118b84350ddbd163bdd7ff1e60}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} \hyperlink{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}{conjugate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float4 {\bfseries xyzw}\hypertarget{class_quaternion_aaa1be23ee999c4dd0a7c670db2dbf10c}{}\label{class_quaternion_aaa1be23ee999c4dd0a7c670db2dbf10c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Quaternion@{Quaternion}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!Quaternion@{Quaternion}}
+\subsubsection[{\texorpdfstring{conjugate()}{conjugate()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Quaternion} Quaternion\+::conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}{}\label{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}
+$ Q = (V, w)$ or $ Q = (sin(a/2), U*sin(a/2) ) $, to inverse we should get $sin$ negative because $cos$ will not has any effect either $V$ or $w$ should be negative to inverse rotation \index{Quaternion@{Quaternion}!conjugate@{conjugate}}
+\index{conjugate@{conjugate}!Quaternion@{Quaternion}}
+\subsubsection[{\texorpdfstring{conjugate()}{conjugate()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Quaternion} Quaternion\+::conjugate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}{}\label{class_quaternion_aee895e4a7d8f3d0e8a65d9ddea5b24b5}
+$ Q = (V, w)$ or $ Q = (sin(a/2), U*sin(a/2) ) $, to inverse we should get $sin$ negative because $cos$ will not has any effect either $V$ or $w$ should be negative to inverse rotation 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/\hyperlink{r_t_tracer_2include_2geom_8cuh}{geom.\+cuh}\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/source/geom.\+cu\end{DoxyCompactItemize}

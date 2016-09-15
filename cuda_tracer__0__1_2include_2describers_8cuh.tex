@@ -1,0 +1,60 @@
+\hypertarget{cuda_tracer__0__1_2include_2describers_8cuh}{}\section{include/describers.cuh File Reference}
+\label{cuda_tracer__0__1_2include_2describers_8cuh}\index{include/describers.\+cuh@{include/describers.\+cuh}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}{intersect\+Mesh} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a mesh. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}{intersect\+Sphere} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a sphere. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}{intersect\+Plane} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a plane. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}{intersect\+Cube} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a cube. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume} (\hyperlink{class_ray}{Ray} \&ray, float(\&precompute)\mbox{[}2\mbox{]}\mbox{[}7\mbox{]}, \hyperlink{class_dev_object}{Dev\+Object} \&current\+Object, uint8\+\_\+t \&normal\+Index)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a bounding slabs of a triangle mesh. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}{mesh\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets mesh properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}{sphere\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets sphere properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}{plane\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets plane properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}{cube\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets cube properties on a hitpoint. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gae4e3caaa9b4a37b20a8a6f84d0c326aa}{delete\+Mesh} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Device memory deallocation function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}{transform\+Mesh} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Whole mesh translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}{transform\+Sphere} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}{transform\+Plane} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}{transform\+Cube} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color} (const \hyperlink{class_i_light}{I\+Light} $\ast$\+\_\+light, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&rctx, \hyperlink{class_vec3}{Vec3f} \&albedo)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_appearence}{Appearence} of incident light. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}{illuminate\+Distant} (const \hyperlink{class_i_light}{I\+Light} \&light, const \hyperlink{class_vec3}{Vec3f} \&P, \hyperlink{class_vec3}{Vec3f} \&light\+Dir, \hyperlink{class_vec3}{Vec3f} \&light\+Intensity, float \&distance)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}{illuminate\+Point} (const \hyperlink{class_i_light}{I\+Light} \&light, const \hyperlink{class_vec3}{Vec3f} \&P, \hyperlink{class_vec3}{Vec3f} \&light\+Dir, \hyperlink{class_vec3}{Vec3f} \&light\+Intensity, float \&distance)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}{set\+Mesh\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}{set\+Sphere\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}{set\+Plane\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}{set\+Cube\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}{strips} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}{wave} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}{grid} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}{checker} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}{none} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Function just for capability with pattern calculation. \end{DoxyCompactList}\item 
+\hyperlink{class_mesh}{Mesh} $\ast$ {\bfseries load\+Mesh} (std\+::string filename, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&model)\hypertarget{cuda_tracer__0__1_2include_2describers_8cuh_ad63e6fca5bd9fe07bf2ef73fafdc3570}{}\label{cuda_tracer__0__1_2include_2describers_8cuh_ad63e6fca5bd9fe07bf2ef73fafdc3570}
+
+\end{DoxyCompactItemize}

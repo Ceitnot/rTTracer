@@ -1,0 +1,90 @@
+\hypertarget{class_object_box}{}\section{Object\+Box Class Reference}
+\label{class_object_box}\index{Object\+Box@{Object\+Box}}
+
+
+Collaboration diagram for Object\+Box\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_object_box__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object\+Box} (std\+::vector$<$ \hyperlink{class_dev_object}{Dev\+Object} $>$ \&d\+Vec)\hypertarget{class_object_box_aafbc94494fbc8d4cdb62f8cb1f051003}{}\label{class_object_box_aafbc94494fbc8d4cdb62f8cb1f051003}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Object\+Box} (const \hyperlink{class_object_box}{Object\+Box} \&karr)\hypertarget{class_object_box_aa87628a92437a186a84efabb697a972f}{}\label{class_object_box_aa87628a92437a186a84efabb697a972f}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Object\+Box} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$objects, int size)\hypertarget{class_object_box_af145281cc745ea12a7d323154d77a4a2}{}\label{class_object_box_af145281cc745ea12a7d323154d77a4a2}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_dev_object}{Dev\+Object} \& {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i)\hypertarget{class_object_box_a93aa063210479567f9817f8fe28db3f0}{}\label{class_object_box_a93aa063210479567f9817f8fe28db3f0}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries hit} (\hyperlink{class_ray}{Ray} \&ray, Dev\+Priority\+Queue$<$ \hyperlink{class_dev_object}{Dev\+Object} $\ast$, M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS $>$ \&queue, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&rctx)\hypertarget{class_object_box_a2414c6dfe6ea1f11fadbb37f96b9a463}{}\label{class_object_box_a2414c6dfe6ea1f11fadbb37f96b9a463}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_i_light}{I\+Light} \& {\bfseries getlight} (uint8\+\_\+t light\+Number)\hypertarget{class_object_box_adf08ee78e3a68ed05a02d3d2a677f04c}{}\label{class_object_box_adf08ee78e3a68ed05a02d3d2a677f04c}
+
+\item 
+void {\bfseries destroy} ()\hypertarget{class_object_box_ac5a98f92851297ed083ea54dd539d129}{}\label{class_object_box_ac5a98f92851297ed083ea54dd539d129}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_dev_object}{Dev\+Object} $\ast$ {\bfseries data} ()\hypertarget{class_object_box_ac5d2891a8048d7a80e4941c1235a5e9f}{}\label{class_object_box_ac5d2891a8048d7a80e4941c1235a5e9f}
+
+\item 
+{\bfseries Object\+Box} (std\+::vector$<$ \hyperlink{class_dev_object}{Dev\+Object} $>$ \&d\+Vec)\hypertarget{class_object_box_aafbc94494fbc8d4cdb62f8cb1f051003}{}\label{class_object_box_aafbc94494fbc8d4cdb62f8cb1f051003}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Object\+Box} (const \hyperlink{class_object_box}{Object\+Box} \&karr)\hypertarget{class_object_box_aa87628a92437a186a84efabb697a972f}{}\label{class_object_box_aa87628a92437a186a84efabb697a972f}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ {\bfseries Object\+Box} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$objects, int size)\hypertarget{class_object_box_af145281cc745ea12a7d323154d77a4a2}{}\label{class_object_box_af145281cc745ea12a7d323154d77a4a2}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_dev_object}{Dev\+Object} \& {\bfseries operator \mbox{[}$\,$\mbox{]}} (uint8\+\_\+t i)\hypertarget{class_object_box_aab4b56530190f6a452248e0a7547a76b}{}\label{class_object_box_aab4b56530190f6a452248e0a7547a76b}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries hit} (\hyperlink{class_ray}{Ray} \&ray, Dev\+Priority\+Queue$<$ \hyperlink{class_dev_object}{Dev\+Object} $\ast$, M\+A\+X\+\_\+\+O\+B\+J\+E\+C\+TS $>$ \&queue, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&rctx)\hypertarget{class_object_box_a2414c6dfe6ea1f11fadbb37f96b9a463}{}\label{class_object_box_a2414c6dfe6ea1f11fadbb37f96b9a463}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_i_light}{I\+Light} \& {\bfseries getlight} (uint8\+\_\+t light\+Number)\hypertarget{class_object_box_a03450a7cc5c94af40e2416d72b0dfe69}{}\label{class_object_box_a03450a7cc5c94af40e2416d72b0dfe69}
+
+\item 
+void {\bfseries destroy} ()\hypertarget{class_object_box_ac5a98f92851297ed083ea54dd539d129}{}\label{class_object_box_ac5a98f92851297ed083ea54dd539d129}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_dev_object}{Dev\+Object} $\ast$ {\bfseries data} ()\hypertarget{class_object_box_a3838983908c17bea5c7659b464055f02}{}\label{class_object_box_a3838983908c17bea5c7659b464055f02}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dev_object}{Dev\+Object} $\ast$ {\bfseries \+\_\+array}\hypertarget{class_object_box_a1c5db29dce3ca086d225788ac6f5b1b9}{}\label{class_object_box_a1c5db29dce3ca086d225788ac6f5b1b9}
+
+\item 
+\hyperlink{class_i_light}{I\+Light} $\ast$ {\bfseries lights}\hypertarget{class_object_box_a4c242111384906aafc355ab98b148076}{}\label{class_object_box_a4c242111384906aafc355ab98b148076}
+
+\item 
+int {\bfseries \+\_\+size}\hypertarget{class_object_box_a5b8723c68c6d742bc04c601122612615}{}\label{class_object_box_a5b8723c68c6d742bc04c601122612615}
+
+\item 
+int {\bfseries lights\+Number}\hypertarget{class_object_box_add9c5ed5d73451037155bd85d53be522}{}\label{class_object_box_add9c5ed5d73451037155bd85d53be522}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} {\bfseries bounding\+Plane\+Normals} \mbox{[}Boundaries\+::n\+Normals\mbox{]}\hypertarget{class_object_box_a082f8c59cead7723d2afd470b2376c6a}{}\label{class_object_box_a082f8c59cead7723d2afd470b2376c6a}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} {\bfseries background\+Color}\hypertarget{class_object_box_a5e71a6c5ca56daf46ddf570730433f16}{}\label{class_object_box_a5e71a6c5ca56daf46ddf570730433f16}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/object\+Box.\+cuh\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/source/object\+Box.\+cu\end{DoxyCompactItemize}

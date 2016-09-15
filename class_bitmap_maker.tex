@@ -1,0 +1,110 @@
+\hypertarget{class_bitmap_maker}{}\section{Bitmap\+Maker$<$ Functor $>$ Class Template Reference}
+\label{class_bitmap_maker}\index{Bitmap\+Maker$<$ Functor $>$@{Bitmap\+Maker$<$ Functor $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Bitmap\+Maker} (int width, int height)
+\item 
+unsigned char $\ast$ {\bfseries get\+Ptr} (void) const
+\item 
+long {\bfseries image\+Size} (void) const
+\item 
+void {\bfseries display} (\hyperlink{struct_camera}{Camera} \&cam, Functor \&reset\+Data)\hypertarget{class_bitmap_maker_a233746936bb4d610ac0ad87094a07caf}{}\label{class_bitmap_maker_a233746936bb4d610ac0ad87094a07caf}
+
+\item 
+unsigned char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (uint32\+\_\+t i)
+\item 
+bool {\bfseries init\+GL} ()
+\item 
+void {\bfseries swap} (\hyperlink{class_bitmap_maker}{Bitmap\+Maker} \&bitmap)
+\item 
+void {\bfseries create\+Buffer} (unsigned int vbo\+\_\+res\+\_\+flags)
+\item 
+void {\bfseries delete\+Buffer} ()
+\item 
+{\bfseries Bitmap\+Maker} (int width, int height)\hypertarget{class_bitmap_maker_a17442bb06bac6120078e6ca3515c309f}{}\label{class_bitmap_maker_a17442bb06bac6120078e6ca3515c309f}
+
+\item 
+unsigned char $\ast$ {\bfseries get\+Ptr} (void) const\hypertarget{class_bitmap_maker_a97a10d0f05fb7951065d42a51aac5f78}{}\label{class_bitmap_maker_a97a10d0f05fb7951065d42a51aac5f78}
+
+\item 
+long {\bfseries image\+Size} (void) const\hypertarget{class_bitmap_maker_ad1a201460b2575a507334385e21ac902}{}\label{class_bitmap_maker_ad1a201460b2575a507334385e21ac902}
+
+\item 
+void {\bfseries display} (\hyperlink{struct_camera}{Camera} \&cam, Functor \&reset\+Data)\hypertarget{class_bitmap_maker_a233746936bb4d610ac0ad87094a07caf}{}\label{class_bitmap_maker_a233746936bb4d610ac0ad87094a07caf}
+
+\item 
+unsigned char \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (uint32\+\_\+t i)\hypertarget{class_bitmap_maker_ac6c610d81a8bd8b11fe150e484afefb8}{}\label{class_bitmap_maker_ac6c610d81a8bd8b11fe150e484afefb8}
+
+\item 
+bool {\bfseries init\+GL} ()\hypertarget{class_bitmap_maker_ac000f27d86706d58a359bde3b24a27f8}{}\label{class_bitmap_maker_ac000f27d86706d58a359bde3b24a27f8}
+
+\item 
+void {\bfseries swap} (\hyperlink{class_bitmap_maker}{Bitmap\+Maker} \&bitmap)\hypertarget{class_bitmap_maker_a64482b2ced38d7b7ddde58f7d9e0032b}{}\label{class_bitmap_maker_a64482b2ced38d7b7ddde58f7d9e0032b}
+
+\item 
+void {\bfseries create\+Buffer} (unsigned int vbo\+\_\+res\+\_\+flags)\hypertarget{class_bitmap_maker_ad7017ecfebf64dcc2d6881cf9c80ce39}{}\label{class_bitmap_maker_ad7017ecfebf64dcc2d6881cf9c80ce39}
+
+\item 
+void {\bfseries delete\+Buffer} ()\hypertarget{class_bitmap_maker_afdd0f7f2fa6b42b1d74158fb82d2ec04}{}\label{class_bitmap_maker_afdd0f7f2fa6b42b1d74158fb82d2ec04}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$$\ast$ {\bfseries get\+Bitmap\+Ptr} ()\hypertarget{class_bitmap_maker_a552fe60cbd4bb0cee2abab954d3d035a}{}\label{class_bitmap_maker_a552fe60cbd4bb0cee2abab954d3d035a}
+
+\item 
+static void {\bfseries Key} (unsigned char key, int x, int y)\hypertarget{class_bitmap_maker_a5419c10622f3287678904cfe33bded58}{}\label{class_bitmap_maker_a5419c10622f3287678904cfe33bded58}
+
+\item 
+static void {\bfseries Draw} (void)\hypertarget{class_bitmap_maker_a7fbe404cf3772e9f00af0f80b8afa781}{}\label{class_bitmap_maker_a7fbe404cf3772e9f00af0f80b8afa781}
+
+\item 
+static void {\bfseries idle} ()\hypertarget{class_bitmap_maker_a0103e8746802fc4f2af3ce16a9a11613}{}\label{class_bitmap_maker_a0103e8746802fc4f2af3ce16a9a11613}
+
+\item 
+static void {\bfseries motion} (int x, int y)\hypertarget{class_bitmap_maker_af7d3a02f076e5ac261fc12ab66be9519}{}\label{class_bitmap_maker_af7d3a02f076e5ac261fc12ab66be9519}
+
+\item 
+static void {\bfseries transform\+Camera} (const std\+::unique\+\_\+ptr$<$ \hyperlink{class_pipeline}{Pipeline} $>$ \&pipeline, const \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$bitmap, const \hyperlink{class_vec3}{Vec3f} \&data)\hypertarget{class_bitmap_maker_a8ea46e4e115677c1b5b52decb1e516a9}{}\label{class_bitmap_maker_a8ea46e4e115677c1b5b52decb1e516a9}
+
+\item 
+static void {\bfseries rotate\+Camera} (const std\+::unique\+\_\+ptr$<$ \hyperlink{class_pipeline}{Pipeline} $>$ \&pipeline, const \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$bitmap, const \hyperlink{class_vec3}{Vec3f} \&data, const float \&delta)\hypertarget{class_bitmap_maker_a0bcc8f4a244f10901f4326ff020bb5a4}{}\label{class_bitmap_maker_a0bcc8f4a244f10901f4326ff020bb5a4}
+
+\item 
+static \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$$\ast$ {\bfseries get\+Bitmap\+Ptr} ()\hypertarget{class_bitmap_maker_a552fe60cbd4bb0cee2abab954d3d035a}{}\label{class_bitmap_maker_a552fe60cbd4bb0cee2abab954d3d035a}
+
+\item 
+static void {\bfseries Key} (unsigned char key, int x, int y)\hypertarget{class_bitmap_maker_a5419c10622f3287678904cfe33bded58}{}\label{class_bitmap_maker_a5419c10622f3287678904cfe33bded58}
+
+\item 
+static void {\bfseries Draw} (void)\hypertarget{class_bitmap_maker_a7fbe404cf3772e9f00af0f80b8afa781}{}\label{class_bitmap_maker_a7fbe404cf3772e9f00af0f80b8afa781}
+
+\item 
+static void {\bfseries idle} ()\hypertarget{class_bitmap_maker_a0103e8746802fc4f2af3ce16a9a11613}{}\label{class_bitmap_maker_a0103e8746802fc4f2af3ce16a9a11613}
+
+\item 
+static void {\bfseries motion} (int x, int y)\hypertarget{class_bitmap_maker_af7d3a02f076e5ac261fc12ab66be9519}{}\label{class_bitmap_maker_af7d3a02f076e5ac261fc12ab66be9519}
+
+\item 
+static void {\bfseries transform\+Camera} (const std\+::unique\+\_\+ptr$<$ \hyperlink{class_pipeline}{Pipeline} $>$ \&pipeline, const \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$bitmap, const \hyperlink{class_vec3}{Vec3f} \&data)\hypertarget{class_bitmap_maker_a8ea46e4e115677c1b5b52decb1e516a9}{}\label{class_bitmap_maker_a8ea46e4e115677c1b5b52decb1e516a9}
+
+\item 
+static void {\bfseries rotate\+Camera} (const std\+::unique\+\_\+ptr$<$ \hyperlink{class_pipeline}{Pipeline} $>$ \&pipeline, const \hyperlink{class_bitmap_maker}{Bitmap\+Maker} $\ast$bitmap, const \hyperlink{class_vec3}{Vec3f} \&data, const float \&delta)\hypertarget{class_bitmap_maker_a0bcc8f4a244f10901f4326ff020bb5a4}{}\label{class_bitmap_maker_a0bcc8f4a244f10901f4326ff020bb5a4}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries x}\hypertarget{class_bitmap_maker_a45b158013c295196bdaa491f6acd2a5c}{}\label{class_bitmap_maker_a45b158013c295196bdaa491f6acd2a5c}
+
+\item 
+int {\bfseries y}\hypertarget{class_bitmap_maker_af790b4055fcc02c12abdc6c19563f737}{}\label{class_bitmap_maker_af790b4055fcc02c12abdc6c19563f737}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/bitmap.\+cuh\end{DoxyCompactItemize}

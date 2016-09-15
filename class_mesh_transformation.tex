@@ -1,0 +1,98 @@
+\hypertarget{class_mesh_transformation}{}\section{Mesh\+Transformation Class Reference}
+\label{class_mesh_transformation}\index{Mesh\+Transformation@{Mesh\+Transformation}}
+
+
+Inheritance diagram for Mesh\+Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_mesh_transformation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mesh\+Transformation\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_mesh_transformation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float3 \hyperlink{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}{normalize} (float3 axis) const
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \hyperlink{class_mesh_transformation_afd48394eed82a85ca29d05cd4817c29e}{transform} () const\hypertarget{class_mesh_transformation_afd48394eed82a85ca29d05cd4817c29e}{}\label{class_mesh_transformation_afd48394eed82a85ca29d05cd4817c29e}
+
+\begin{DoxyCompactList}\small\item\em The function is called after applying all the transformations. \end{DoxyCompactList}\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& \hyperlink{class_mesh_transformation_ad14a09457c8d103682183cd8e13b78dc}{rotate} (const float3 \&axis, float deg\+Angle)\hypertarget{class_mesh_transformation_ad14a09457c8d103682183cd8e13b78dc}{}\label{class_mesh_transformation_ad14a09457c8d103682183cd8e13b78dc}
+
+\begin{DoxyCompactList}\small\item\em Rotation was implemented with Quaternions. \end{DoxyCompactList}\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& {\bfseries translate} (float3 translation\+Point)\hypertarget{class_mesh_transformation_a07eeec7706eaf9e90aaa486664b2632c}{}\label{class_mesh_transformation_a07eeec7706eaf9e90aaa486664b2632c}
+
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& {\bfseries scale} (float3 scale\+Factor)\hypertarget{class_mesh_transformation_ab8dbdbdcaa5e40a7aa234d076b351971}{}\label{class_mesh_transformation_ab8dbdbdcaa5e40a7aa234d076b351971}
+
+\item 
+void {\bfseries reset} ()\hypertarget{class_mesh_transformation_a86b8191ff85c6a34e880dcfb582960ca}{}\label{class_mesh_transformation_a86b8191ff85c6a34e880dcfb582960ca}
+
+\item 
+float3 \hyperlink{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}{normalize} (float3 axis) const
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} {\bfseries transform} () const\hypertarget{class_mesh_transformation_afd48394eed82a85ca29d05cd4817c29e}{}\label{class_mesh_transformation_afd48394eed82a85ca29d05cd4817c29e}
+
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& \hyperlink{class_mesh_transformation_aac3b1a1d825a54d84bd5d72a1498647e}{rotate} (const float3 \&axis, float deg\+Angle)\hypertarget{class_mesh_transformation_aac3b1a1d825a54d84bd5d72a1498647e}{}\label{class_mesh_transformation_aac3b1a1d825a54d84bd5d72a1498647e}
+
+\begin{DoxyCompactList}\small\item\em Rotation was implemented with Quaternions. \end{DoxyCompactList}\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& {\bfseries translate} (float3 translation\+Point)\hypertarget{class_mesh_transformation_a7f09d909a459ef346687f6e6a7088bce}{}\label{class_mesh_transformation_a7f09d909a459ef346687f6e6a7088bce}
+
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \& {\bfseries scale} (float3 scale\+Factor)\hypertarget{class_mesh_transformation_a971fe549514fd65ac14c37f0b9529cc9}{}\label{class_mesh_transformation_a971fe549514fd65ac14c37f0b9529cc9}
+
+\item 
+void {\bfseries reset} ()\hypertarget{class_mesh_transformation_a86b8191ff85c6a34e880dcfb582960ca}{}\label{class_mesh_transformation_a86b8191ff85c6a34e880dcfb582960ca}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Mesh\+Transformation@{Mesh\+Transformation}!normalize@{normalize}}
+\index{normalize@{normalize}!Mesh\+Transformation@{Mesh\+Transformation}}
+\subsubsection[{\texorpdfstring{normalize(float3 axis) const}{normalize(float3 axis) const}}]{\setlength{\rightskip}{0pt plus 5cm}float3 Mesh\+Transformation\+::normalize (
+\begin{DoxyParamCaption}
+\item[{float3}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}{}\label{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}
+Axis normalization. Required for rotation. 
+
+Implements \hyperlink{class_pipeline}{Pipeline}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517_icgraph}
+\end{center}
+\end{figure}
+\index{Mesh\+Transformation@{Mesh\+Transformation}!normalize@{normalize}}
+\index{normalize@{normalize}!Mesh\+Transformation@{Mesh\+Transformation}}
+\subsubsection[{\texorpdfstring{normalize(float3 axis) const}{normalize(float3 axis) const}}]{\setlength{\rightskip}{0pt plus 5cm}float3 Mesh\+Transformation\+::normalize (
+\begin{DoxyParamCaption}
+\item[{float3}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}{}\label{class_mesh_transformation_a62b90b65ce289707982efdb23a88e517}
+Axis normalization. Required for rotation. 
+
+Implements \hyperlink{class_pipeline}{Pipeline}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/transformations.\+cuh\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/source/transformations.\+cu\end{DoxyCompactItemize}

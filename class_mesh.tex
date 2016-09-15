@@ -1,0 +1,81 @@
+\hypertarget{class_mesh}{}\section{Mesh Class Reference}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+Class for triangulated mesh polygons.  
+
+
+
+
+Collaboration diagram for Mesh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{class_mesh__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Mesh} (const uint32\+\_\+t nfaces, const std\+::vector$<$ uint32\+\_\+t $>$ \&face\+Index, const std\+::vector$<$ uint32\+\_\+t $>$ \&verts\+Index, std\+::vector$<$ \hyperlink{class_vec3}{Vec3f} $>$ \&verts, const std\+::vector$<$ \hyperlink{class_vec3}{Vec3f} $>$ \&normals, const std\+::vector$<$ \hyperlink{class_vec2}{Vec2f} $>$ \&st, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&model)\hypertarget{class_mesh_ae66d189c5755899fc40c0a6f33a28781}{}\label{class_mesh_ae66d189c5755899fc40c0a6f33a28781}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const \hyperlink{class_vec3}{Vec3f} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const\hypertarget{class_mesh_abe7a4a30b9a82dd71164071d0f398ab8}{}\label{class_mesh_abe7a4a30b9a82dd71164071d0f398ab8}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)\hypertarget{class_mesh_ad97c062c97725555f13cec4c9c00448f}{}\label{class_mesh_ad97c062c97725555f13cec4c9c00448f}
+
+\item 
+\hyperlink{struct_polymorphic}{Polymorphic} {\bfseries get\+Device\+Polymorphic} (const Pattern \&dev\+\_\+pattern)\hypertarget{class_mesh_a5a6b65787f239cffc60fbf955473b129}{}\label{class_mesh_a5a6b65787f239cffc60fbf955473b129}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} $\ast$ {\bfseries data} ()\hypertarget{class_mesh_a827769cc062165859fc51581e14d64d8}{}\label{class_mesh_a827769cc062165859fc51581e14d64d8}
+
+\item 
+{\bfseries Mesh} (const uint32\+\_\+t nfaces, const std\+::vector$<$ uint32\+\_\+t $>$ \&face\+Index, const std\+::vector$<$ uint32\+\_\+t $>$ \&verts\+Index, std\+::vector$<$ \hyperlink{class_vec3}{Vec3f} $>$ \&verts, const std\+::vector$<$ \hyperlink{class_vec3}{Vec3f} $>$ \&normals, const std\+::vector$<$ \hyperlink{class_vec2}{Vec2f} $>$ \&st, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&model)\hypertarget{class_mesh_ae66d189c5755899fc40c0a6f33a28781}{}\label{class_mesh_ae66d189c5755899fc40c0a6f33a28781}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ const \hyperlink{class_vec3}{Vec3f} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const\hypertarget{class_mesh_ace991bdeffafcf1d7d9ceaf6a697e6bd}{}\label{class_mesh_ace991bdeffafcf1d7d9ceaf6a697e6bd}
+
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i)\hypertarget{class_mesh_a2fec73c82d262d4a5b09dc80918c1054}{}\label{class_mesh_a2fec73c82d262d4a5b09dc80918c1054}
+
+\item 
+\hyperlink{struct_polymorphic}{Polymorphic} {\bfseries get\+Device\+Polymorphic} (const Pattern \&dev\+\_\+pattern)\hypertarget{class_mesh_a5a6b65787f239cffc60fbf955473b129}{}\label{class_mesh_a5a6b65787f239cffc60fbf955473b129}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} $\ast$ {\bfseries data} ()\hypertarget{class_mesh_a4974d2a092f0b34a0e4d0de0cf7f0bac}{}\label{class_mesh_a4974d2a092f0b34a0e4d0de0cf7f0bac}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{class_mesh_a77cc0257fcf6e780b4d286a97e94ec3c}{verts\+Number}\hypertarget{class_mesh_a77cc0257fcf6e780b4d286a97e94ec3c}{}\label{class_mesh_a77cc0257fcf6e780b4d286a97e94ec3c}
+
+\begin{DoxyCompactList}\small\item\em the maximum number of vertices \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_mesh_a6cf23eafd1fca3375dcd7ed805f32340}{num\+Tris}\hypertarget{class_mesh_a6cf23eafd1fca3375dcd7ed805f32340}{}\label{class_mesh_a6cf23eafd1fca3375dcd7ed805f32340}
+
+\begin{DoxyCompactList}\small\item\em number of triangles \end{DoxyCompactList}\item 
+\hyperlink{class_vec3}{Vec3f} $\ast$ {\bfseries P}\hypertarget{class_mesh_a977d73ff3b08961c0c7fea25897422d6}{}\label{class_mesh_a977d73ff3b08961c0c7fea25897422d6}
+
+\item 
+\hyperlink{class_triangle}{Triangle} $\ast$ {\bfseries triangles}\hypertarget{class_mesh_acfbc65d1fea728464f102eac4e6def71}{}\label{class_mesh_acfbc65d1fea728464f102eac4e6def71}
+
+\item 
+\hyperlink{class_vec3}{Vec3f} $\ast$ \hyperlink{class_mesh_a3f10793cd173995a7042acf97955984f}{N}\hypertarget{class_mesh_a3f10793cd173995a7042acf97955984f}{}\label{class_mesh_a3f10793cd173995a7042acf97955984f}
+
+\begin{DoxyCompactList}\small\item\em triangles vertex normals \end{DoxyCompactList}\item 
+\hyperlink{class_vec2}{Vec2f} $\ast$ \hyperlink{class_mesh_afa65cdda90551fad18f51c044e9a9b5e}{tex\+Coordinates}\hypertarget{class_mesh_afa65cdda90551fad18f51c044e9a9b5e}{}\label{class_mesh_afa65cdda90551fad18f51c044e9a9b5e}
+
+\begin{DoxyCompactList}\small\item\em triangles texture coordinates \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for triangulated mesh polygons. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/object\+Box.\+cuh\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/include/geometry\+Loader.\+cuh\item 
+/home/god/cuda-\/workspace/r\+T\+Tracer/source/object\+Box.\+cu\end{DoxyCompactItemize}

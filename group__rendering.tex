@@ -1,0 +1,36 @@
+\hypertarget{group__rendering}{}\section{Rendering}
+\label{group__rendering}\index{Rendering@{Rendering}}
+Collaboration diagram for Rendering\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{group__rendering}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__intersection__test__prperties}{Intersection tests and hit object properties}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries G\+P\+U\+::launch\+Asynch\+Ray\+Tracing} (\hyperlink{struct_camera}{Camera} cam, \hyperlink{class_object_box}{Object\+Box} \&objects, unsigned char $\ast$dev\+\_\+bitmap, dim3 \&blocks\+Per\+Grid, dim3 \&threads\+Per\+Block)\hypertarget{group__rendering_gaf46c232fe3675fb30831b3e847df0eca}{}\label{group__rendering_gaf46c232fe3675fb30831b3e847df0eca}
+
+\item 
+void \hyperlink{group__rendering_gadd1c99922e3b5c249fac22f8946b5e57}{G\+P\+U\+::render} (\hyperlink{struct_camera}{Camera} \&cam, \hyperlink{class_object_box}{Object\+Box} \&objects, unsigned char $\ast$buffer)\hypertarget{group__rendering_gadd1c99922e3b5c249fac22f8946b5e57}{}\label{group__rendering_gadd1c99922e3b5c249fac22f8946b5e57}
+
+\begin{DoxyCompactList}\small\item\em A device kernel launcher. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries G\+P\+U\+::trace} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_object_box}{Object\+Box} \&objects, \hyperlink{struct_g_p_u_1_1_rendering_context}{Rendering\+Context} \&rctx, \hyperlink{class_dev_object}{Dev\+Object} $\ast$$\ast$hit\+Object, Ray\+Type raytype=P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY)\hypertarget{group__rendering_gab61f39aa210b4af12353c58c82b8f68e}{}\label{group__rendering_gab61f39aa210b4af12353c58c82b8f68e}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} {\bfseries G\+P\+U\+::shade} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_object_box}{Object\+Box} \&obj, const \hyperlink{struct_camera}{Camera} \&options)\hypertarget{group__rendering_ga5d61799db365527e23364cea7a9f0f40}{}\label{group__rendering_ga5d61799db365527e23364cea7a9f0f40}
+
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void {\bfseries raytracer} (\hyperlink{struct_camera}{Camera} cam, \hyperlink{class_object_box}{Object\+Box} objects, unsigned char $\ast$dev\+\_\+bitmap)\hypertarget{group__rendering_ga60a999f6f314338d105c33e96885a474}{}\label{group__rendering_ga60a999f6f314338d105c33e96885a474}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}

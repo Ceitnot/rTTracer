@@ -1,0 +1,238 @@
+\hypertarget{group__device__pointers}{}\section{Device static function pointers}
+\label{group__device__pointers}\index{Device static function pointers@{Device static function pointers}}
+Collaboration diagram for Device static function pointers\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{group__device__pointers}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ {\bfseries Intersect}) (\hyperlink{class_ray}{Ray} \&, \hyperlink{class_dev_object}{Dev\+Object} \&, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&)\hypertarget{group__device__pointers_gadd5691b4d1b8e3d72a8b279063574170}{}\label{group__device__pointers_gadd5691b4d1b8e3d72a8b279063574170}
+
+\item 
+typedef bool($\ast$ {\bfseries Intersect\+BV}) (\hyperlink{class_ray}{Ray} \&ray, float(\&precompute)\mbox{[}2\mbox{]}\mbox{[}7\mbox{]}, \hyperlink{class_dev_object}{Dev\+Object} \&current\+Object, uint8\+\_\+t \&normal\+Index)\hypertarget{group__device__pointers_ga651ba9f838240bd32d8ad85a1deec6ce}{}\label{group__device__pointers_ga651ba9f838240bd32d8ad85a1deec6ce}
+
+\item 
+typedef void($\ast$ {\bfseries Properties}) (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)\hypertarget{group__device__pointers_ga3db4cb2abc6918447914228ab5019d38}{}\label{group__device__pointers_ga3db4cb2abc6918447914228ab5019d38}
+
+\item 
+typedef void($\ast$ {\bfseries Transform}) (\hyperlink{class_dev_object}{Dev\+Object} $\ast$, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&)\hypertarget{group__device__pointers_ga7342a43dc846e3462f53f5af48daeab2}{}\label{group__device__pointers_ga7342a43dc846e3462f53f5af48daeab2}
+
+\item 
+typedef void($\ast$ {\bfseries Set\+BV}) (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$, \hyperlink{class_boundaries}{Boundaries} $\ast$, \hyperlink{class_vec3}{Vec3f}(\&)\mbox{[}7\mbox{]}, float $\ast$(\&)\mbox{[}7\mbox{]})\hypertarget{group__device__pointers_gaf734749a4b67aed1bb494cb8000f870d}{}\label{group__device__pointers_gaf734749a4b67aed1bb494cb8000f870d}
+
+\item 
+typedef float($\ast$ {\bfseries Pattern}) (const \hyperlink{class_vec2}{Vec2f} \&)\hypertarget{group__device__pointers_gacb1d13948594101a67c3ec975d34e9b8}{}\label{group__device__pointers_gacb1d13948594101a67c3ec975d34e9b8}
+
+\item 
+typedef bool($\ast$ {\bfseries Intersect}) (\hyperlink{class_ray}{Ray} \&, \hyperlink{class_dev_object}{Dev\+Object} \&, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&)\hypertarget{group__device__pointers_gadd5691b4d1b8e3d72a8b279063574170}{}\label{group__device__pointers_gadd5691b4d1b8e3d72a8b279063574170}
+
+\item 
+typedef bool($\ast$ {\bfseries Intersect\+BV}) (\hyperlink{class_ray}{Ray} \&ray, float(\&precompute)\mbox{[}2\mbox{]}\mbox{[}7\mbox{]}, \hyperlink{class_dev_object}{Dev\+Object} \&current\+Object, uint8\+\_\+t \&normal\+Index)\hypertarget{group__device__pointers_ga651ba9f838240bd32d8ad85a1deec6ce}{}\label{group__device__pointers_ga651ba9f838240bd32d8ad85a1deec6ce}
+
+\item 
+typedef void($\ast$ {\bfseries Properties}) (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)\hypertarget{group__device__pointers_ga3db4cb2abc6918447914228ab5019d38}{}\label{group__device__pointers_ga3db4cb2abc6918447914228ab5019d38}
+
+\item 
+typedef void($\ast$ {\bfseries Transform}) (\hyperlink{class_dev_object}{Dev\+Object} $\ast$, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&)\hypertarget{group__device__pointers_ga7342a43dc846e3462f53f5af48daeab2}{}\label{group__device__pointers_ga7342a43dc846e3462f53f5af48daeab2}
+
+\item 
+typedef void($\ast$ {\bfseries Set\+BV}) (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$, \hyperlink{class_boundaries}{Boundaries} $\ast$, \hyperlink{class_vec3}{Vec3f}(\&)\mbox{[}7\mbox{]}, float $\ast$(\&)\mbox{[}7\mbox{]})\hypertarget{group__device__pointers_gaf734749a4b67aed1bb494cb8000f870d}{}\label{group__device__pointers_gaf734749a4b67aed1bb494cb8000f870d}
+
+\item 
+typedef float($\ast$ {\bfseries Pattern}) (const \hyperlink{class_vec2}{Vec2f} \&)\hypertarget{group__device__pointers_gacb1d13948594101a67c3ec975d34e9b8}{}\label{group__device__pointers_gacb1d13948594101a67c3ec975d34e9b8}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}{dev\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}{intersect\+Mesh}\hypertarget{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}{}\label{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}{dev\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}{}\label{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}{dev\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}{mesh\+Properties}\hypertarget{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}{}\label{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gac3760d5ca4da6826e005200738140558}{dev\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}{transform\+Mesh}\hypertarget{group__device__pointers_gac3760d5ca4da6826e005200738140558}{}\label{group__device__pointers_gac3760d5ca4da6826e005200738140558}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}{set\+\_\+bv} = \hyperlink{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}{set\+Mesh\+Acceleration\+Volume}\hypertarget{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}{}\label{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}{dev\+\_\+plane\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}{intersect\+Plane}\hypertarget{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}{}\label{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}{dev\+\_\+plane\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}{}\label{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}{dev\+\_\+plane\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}{plane\+Properties}\hypertarget{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}{}\label{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}{dev\+\_\+plane\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}{transform\+Plane}\hypertarget{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}{}\label{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}{set\+\_\+plane\+\_\+bv} = \hyperlink{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}{set\+Plane\+Acceleration\+Volume}\hypertarget{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}{}\label{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}{dev\+\_\+cube\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}{intersect\+Cube}\hypertarget{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}{}\label{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}{dev\+\_\+cube\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}{}\label{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}{dev\+\_\+cube\+\_\+properties} = \hyperlink{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}{cube\+Properties}\hypertarget{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}{}\label{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}{dev\+\_\+cube\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}{transform\+Cube}\hypertarget{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}{}\label{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}{set\+\_\+cube\+\_\+bv} = \hyperlink{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}{set\+Cube\+Acceleration\+Volume}\hypertarget{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}{}\label{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}{dev\+\_\+sphere\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}{intersect\+Sphere}\hypertarget{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}{}\label{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}{dev\+\_\+sphere\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}{}\label{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}{dev\+\_\+sphere\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}{sphere\+Properties}\hypertarget{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}{}\label{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}{dev\+\_\+sphere\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}{transform\+Sphere}\hypertarget{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}{}\label{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}{set\+\_\+sphere\+\_\+bv} = \hyperlink{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}{set\+Sphere\+Acceleration\+Volume}\hypertarget{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}{}\label{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Illuminate \hyperlink{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}{dev\+\_\+distant\+\_\+illuminate} = \hyperlink{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}{illuminate\+Distant}\hypertarget{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}{}\label{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}
+
+\begin{DoxyCompactList}\small\item\em distant lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Illuminate \hyperlink{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}{dev\+\_\+point\+\_\+illuminate} = \hyperlink{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}{illuminate\+Point}\hypertarget{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}{}\label{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}
+
+\begin{DoxyCompactList}\small\item\em point lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Reflected\+Color \hyperlink{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}{dev\+\_\+distant\+\_\+reflected\+\_\+color} = \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color}\hypertarget{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}{}\label{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}
+
+\begin{DoxyCompactList}\small\item\em distant lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Reflected\+Color \hyperlink{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}{dev\+\_\+point\+\_\+reflected\+\_\+color} = \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color}\hypertarget{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}{}\label{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}
+
+\begin{DoxyCompactList}\small\item\em point lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern \hyperlink{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}{dev\+\_\+strips} = \hyperlink{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}{strips}\hypertarget{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}{}\label{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}
+
+\begin{DoxyCompactList}\small\item\em texturing pattern function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+wave} = \hyperlink{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}{wave}\hypertarget{group__device__pointers_ga106fc9eb2215ecfb1360a3334a8f22dd}{}\label{group__device__pointers_ga106fc9eb2215ecfb1360a3334a8f22dd}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+grid} = \hyperlink{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}{grid}\hypertarget{group__device__pointers_gaf458f0bb79e06d9beaee341c3955cb1c}{}\label{group__device__pointers_gaf458f0bb79e06d9beaee341c3955cb1c}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+checker} = \hyperlink{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}{checker}\hypertarget{group__device__pointers_ga0a22f4af565cbe3e8e8eb8719d3ac30f}{}\label{group__device__pointers_ga0a22f4af565cbe3e8e8eb8719d3ac30f}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+interpolation}\hypertarget{group__device__pointers_ga050793208c04dff921d09f103558fded}{}\label{group__device__pointers_ga050793208c04dff921d09f103558fded}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+none} = \hyperlink{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}{none}\hypertarget{group__device__pointers_ga5e312ec8917b7248b60bffc6f165618b}{}\label{group__device__pointers_ga5e312ec8917b7248b60bffc6f165618b}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}{dev\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}{intersect\+Mesh}\hypertarget{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}{}\label{group__device__pointers_ga00654ffb007d4b5c95c00b429dc26ae9}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}{dev\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}{}\label{group__device__pointers_gaeee39cf2f67c91f2a6c312651283dc94}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}{dev\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}{mesh\+Properties}\hypertarget{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}{}\label{group__device__pointers_gac0d627981d2453b8f45dc3cca7a69a28}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gac3760d5ca4da6826e005200738140558}{dev\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}{transform\+Mesh}\hypertarget{group__device__pointers_gac3760d5ca4da6826e005200738140558}{}\label{group__device__pointers_gac3760d5ca4da6826e005200738140558}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}{set\+\_\+bv} = \hyperlink{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}{set\+Mesh\+Acceleration\+Volume}\hypertarget{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}{}\label{group__device__pointers_gab0ffce09c75b9b50bae6f2a547e8302e}
+
+\begin{DoxyCompactList}\small\item\em mesh function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}{dev\+\_\+plane\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}{intersect\+Plane}\hypertarget{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}{}\label{group__device__pointers_ga9e46bdfb1fa506ed7f5f6c6e11ebc091}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}{dev\+\_\+plane\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}{}\label{group__device__pointers_gad02954a9c76716ef59d8eda0101e15c7}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}{dev\+\_\+plane\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}{plane\+Properties}\hypertarget{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}{}\label{group__device__pointers_ga31299a8a293d1f8fd1307f1e47b19b21}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}{dev\+\_\+plane\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}{transform\+Plane}\hypertarget{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}{}\label{group__device__pointers_ga2515bf686c92a25ea08f35a1af5ff5af}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}{set\+\_\+plane\+\_\+bv} = \hyperlink{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}{set\+Plane\+Acceleration\+Volume}\hypertarget{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}{}\label{group__device__pointers_gadad9e63712118e3425b0e754615f70d4}
+
+\begin{DoxyCompactList}\small\item\em plane function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}{dev\+\_\+cube\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}{intersect\+Cube}\hypertarget{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}{}\label{group__device__pointers_gafba3ff50c17e36337c7578ead7cc6f1e}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}{dev\+\_\+cube\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}{}\label{group__device__pointers_ga0d5bc928c76877f9dd81cb8580b7fc1e}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}{dev\+\_\+cube\+\_\+properties} = \hyperlink{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}{cube\+Properties}\hypertarget{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}{}\label{group__device__pointers_ga2d4562e3ca58496f57bb1d3cff526d25}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}{dev\+\_\+cube\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}{transform\+Cube}\hypertarget{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}{}\label{group__device__pointers_gab1b1881cdcd02a40f59daec059586d68}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}{set\+\_\+cube\+\_\+bv} = \hyperlink{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}{set\+Cube\+Acceleration\+Volume}\hypertarget{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}{}\label{group__device__pointers_gaec206099dfbd80a9d2e14d71b1fe150f}
+
+\begin{DoxyCompactList}\small\item\em cube function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect \hyperlink{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}{dev\+\_\+sphere\+\_\+intersect} = \hyperlink{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}{intersect\+Sphere}\hypertarget{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}{}\label{group__device__pointers_ga8f39c98f1f65e4214ac0e5daa8806611}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Intersect\+BV \hyperlink{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}{dev\+\_\+sphere\+\_\+intersect\+BV} = \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume}\hypertarget{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}{}\label{group__device__pointers_ga10dd7617749ee8f0f1766add06b56943}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Properties \hyperlink{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}{dev\+\_\+sphere\+\_\+properties} = \hyperlink{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}{sphere\+Properties}\hypertarget{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}{}\label{group__device__pointers_ga4d14ea4399efac27739f61e12a806591}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Transform \hyperlink{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}{dev\+\_\+sphere\+\_\+transform} = \hyperlink{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}{transform\+Sphere}\hypertarget{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}{}\label{group__device__pointers_gaede5be8cca4942f24473afcbdaa177e4}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+Set\+BV \hyperlink{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}{set\+\_\+sphere\+\_\+bv} = \hyperlink{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}{set\+Sphere\+Acceleration\+Volume}\hypertarget{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}{}\label{group__device__pointers_gac53e785e30a603faf7fd77856e39cd0f}
+
+\begin{DoxyCompactList}\small\item\em sphere function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Illuminate \hyperlink{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}{dev\+\_\+distant\+\_\+illuminate} = \hyperlink{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}{illuminate\+Distant}\hypertarget{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}{}\label{group__device__pointers_ga29d3a70fa1f9d926548b068b7cda5d44}
+
+\begin{DoxyCompactList}\small\item\em distant lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Illuminate \hyperlink{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}{dev\+\_\+point\+\_\+illuminate} = \hyperlink{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}{illuminate\+Point}\hypertarget{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}{}\label{group__device__pointers_ga9fb3abd281c9d4d00e477db4055e3111}
+
+\begin{DoxyCompactList}\small\item\em point lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Reflected\+Color \hyperlink{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}{dev\+\_\+distant\+\_\+reflected\+\_\+color} = \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color}\hypertarget{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}{}\label{group__device__pointers_ga3efd041b094f1b7a7c031d9c244a0630}
+
+\begin{DoxyCompactList}\small\item\em distant lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Reflected\+Color \hyperlink{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}{dev\+\_\+point\+\_\+reflected\+\_\+color} = \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color}\hypertarget{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}{}\label{group__device__pointers_ga59eceb819291c7ca1e66b767a7253dc8}
+
+\begin{DoxyCompactList}\small\item\em point lighting function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern \hyperlink{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}{dev\+\_\+strips} = \hyperlink{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}{strips}\hypertarget{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}{}\label{group__device__pointers_ga2efdb7a5e4237c7f66bf1b71f1839335}
+
+\begin{DoxyCompactList}\small\item\em texturing pattern function \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+wave} = \hyperlink{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}{wave}\hypertarget{group__device__pointers_ga106fc9eb2215ecfb1360a3334a8f22dd}{}\label{group__device__pointers_ga106fc9eb2215ecfb1360a3334a8f22dd}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+grid} = \hyperlink{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}{grid}\hypertarget{group__device__pointers_gaf458f0bb79e06d9beaee341c3955cb1c}{}\label{group__device__pointers_gaf458f0bb79e06d9beaee341c3955cb1c}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+checker} = \hyperlink{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}{checker}\hypertarget{group__device__pointers_ga0a22f4af565cbe3e8e8eb8719d3ac30f}{}\label{group__device__pointers_ga0a22f4af565cbe3e8e8eb8719d3ac30f}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+interpolation}\hypertarget{group__device__pointers_ga050793208c04dff921d09f103558fded}{}\label{group__device__pointers_ga050793208c04dff921d09f103558fded}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ Pattern {\bfseries dev\+\_\+none} = \hyperlink{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}{none}\hypertarget{group__device__pointers_ga5e312ec8917b7248b60bffc6f165618b}{}\label{group__device__pointers_ga5e312ec8917b7248b60bffc6f165618b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+-\/ The part of the polymorphic behavior implementation on both host and device sides.
+
+-\/ Function pointer typedefs. 

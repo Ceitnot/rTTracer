@@ -1,0 +1,56 @@
+\hypertarget{cuda_tracer__0__1_2include_2rendering_8cuh}{}\section{include/rendering.cuh File Reference}
+\label{cuda_tracer__0__1_2include_2rendering_8cuh}\index{include/rendering.\+cuh@{include/rendering.\+cuh}}
+
+
+Rendering. Backward ray tracing.  
+
+
+{\ttfamily \#include \char`\"{}transformations.\+cuh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}thrust\+Helper.\+cuh\char`\"{}}\\*
+{\ttfamily \#include $<$omp.\+h$>$}\\*
+Include dependency graph for rendering.\+cuh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{cuda_tracer__0__1_2include_2rendering_8cuh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cuda_tracer__0__1_2include_2rendering_8cuh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bfseries G\+P\+U\+::launch\+Asynch\+Ray\+Tracing} (\hyperlink{struct_camera}{Camera} cam, \hyperlink{class_object_box}{Object\+Box} \&objects, unsigned char $\ast$dev\+\_\+bitmap, dim3 \&blocks\+Per\+Grid, dim3 \&threads\+Per\+Block)
+\item 
+void \hyperlink{group__rendering_gadd1c99922e3b5c249fac22f8946b5e57}{G\+P\+U\+::render} (\hyperlink{struct_camera}{Camera} \&cam, \hyperlink{class_object_box}{Object\+Box} \&objects, unsigned char $\ast$buffer)
+\begin{DoxyCompactList}\small\item\em A device kernel launcher. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries G\+P\+U\+::trace} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_object_box}{Object\+Box} \&objects, Rendering\+Context \&rctx, \hyperlink{class_dev_object}{Dev\+Object} $\ast$$\ast$hit\+Object, Ray\+Type raytype=P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY)
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} {\bfseries G\+P\+U\+::shade} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_object_box}{Object\+Box} \&obj, const \hyperlink{struct_camera}{Camera} \&options)
+\item 
+{\footnotesize template$<$class Bounding\+Volume\+Type , class Distances , size\+\_\+t size$>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void {\bfseries G\+P\+U\+::assign\+Bounding\+Object} (Bounding\+Volume\+Type $\ast$bv, Distances near\+Far\+Distances, size\+\_\+t \+\_\+size=size)\hypertarget{r_t_tracer_2include_2rendering_8cuh_a81d1631d860fe534326c9dcb30d1c2ec}{}\label{r_t_tracer_2include_2rendering_8cuh_a81d1631d860fe534326c9dcb30d1c2ec}
+
+\item 
+{\footnotesize template$<$class Object\+Type $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void {\bfseries G\+P\+U\+::get\+Points} (const Object\+Type $\ast$object, float $\ast$points, size\+\_\+t num)\hypertarget{r_t_tracer_2include_2rendering_8cuh_ae20d656e78c761dae4199fd9e7a547be}{}\label{r_t_tracer_2include_2rendering_8cuh_ae20d656e78c761dae4199fd9e7a547be}
+
+\item 
+{\footnotesize template$<$class Object\+Type $>$ }\\\+\_\+\+\_\+global\+\_\+\+\_\+ void {\bfseries G\+P\+U\+::massive\+Dot\+Product} (const Object\+Type $\ast$object, const \hyperlink{class_vec3}{Vec3f} \+\_\+bounding\+Normal, float $\ast$\+\_\+res, size\+\_\+t res\+Len)\hypertarget{r_t_tracer_2include_2rendering_8cuh_a25d7b057a4233ea0016c486e951f7946}{}\label{r_t_tracer_2include_2rendering_8cuh_a25d7b057a4233ea0016c486e951f7946}
+
+\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ bool {\bfseries G\+P\+U\+::is\+Point\+Visible} (\hyperlink{class_object_box}{Object\+Box} \&obj, const uint8\+\_\+t \&light\+Number, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, Rendering\+Context \&rctx, const float \&bias=0.\+00001f)\hypertarget{r_t_tracer_2include_2rendering_8cuh_adcb3e0c7119489d0f49d385c771df604}{}\label{r_t_tracer_2include_2rendering_8cuh_adcb3e0c7119489d0f49d385c771df604}
+
+\item 
+\+\_\+\+\_\+global\+\_\+\+\_\+ void {\bfseries raytracer} (\hyperlink{struct_camera}{Camera} cam, \hyperlink{class_object_box}{Object\+Box} objects, unsigned char $\ast$dev\+\_\+bitmap)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Rendering. Backward ray tracing. 
+

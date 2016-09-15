@@ -1,0 +1,106 @@
+\hypertarget{cuda_tracer__0__1_2include_2geom_8cuh}{}\section{include/geom.cuh File Reference}
+\label{cuda_tracer__0__1_2include_2geom_8cuh}\index{include/geom.\+cuh@{include/geom.\+cuh}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$cstdio$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global\+\_\+constants.\+cuh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}algorithms.\+cuh\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}helper.\+cuh\char`\"{}}\\*
+Include dependency graph for geom.\+cuh\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cuda_tracer__0__1_2include_2geom_8cuh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{cuda_tracer__0__1_2include_2geom_8cuh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_color}{Color}
+\item 
+class \hyperlink{class_vec2}{Vec2}
+\item 
+class \hyperlink{class_vec3}{Vec3}
+\item 
+class \hyperlink{class_square_matrix4}{Square\+Matrix4$<$ T $>$}
+\item 
+class \hyperlink{class_ray}{Ray}
+\item 
+struct \hyperlink{struct_camera}{Camera}
+\item 
+class \hyperlink{class_quaternion}{Quaternion}
+\item 
+class \hyperlink{class_triangle}{Triangle}
+\item 
+struct \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context}
+\item 
+struct \hyperlink{struct_vertex_properties}{Vertex\+Properties}
+\begin{DoxyCompactList}\small\item\em auxiliary class for .obj files parsing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_vec3}{Vec3} {\bfseries Vec3f}
+\item 
+typedef \hyperlink{class_vec2}{Vec2} {\bfseries Vec2f}
+\item 
+typedef \hyperlink{class_square_matrix4}{Square\+Matrix4}$<$ float $>$ {\bfseries Square\+Matrix4f}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Ray\+Type} \{ {\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
+{\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}, 
+{\bfseries P\+R\+I\+M\+A\+R\+Y\+\_\+\+R\+AY}, 
+{\bfseries S\+H\+A\+D\+O\+W\+\_\+\+R\+AY}
+ \}\hypertarget{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}{}\label{group__linear__algebra_ga1d5111b9fffd76014406e866c8784459}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float {\bfseries clamp} (const float \&lo, const float \&hi, const float \&v)
+\item 
+constexpr double {\bfseries To\+Radian} (float x)
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float {\bfseries deg2rad} (const float \&deg)
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} {\bfseries operator$\ast$} (const \hyperlink{class_quaternion}{Quaternion} \&l, const \hyperlink{class_quaternion}{Quaternion} \&r)
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_quaternion}{Quaternion} {\bfseries operator$\ast$} (const \hyperlink{class_quaternion}{Quaternion} \&q, const \hyperlink{class_vec3}{Vec3f} \&v)
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} {\bfseries scale} (float x, float y, float z)
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} {\bfseries translate} (float x, float y, float z)
+\item 
+\hyperlink{class_square_matrix4}{Square\+Matrix4f} \hyperlink{group__linear__algebra_gac7b995c759cd539cf455cae62c4184e6}{rotate} (const \hyperlink{class_vec3}{Vec3f} \&axis, float deg\+Angle)
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__linear__algebra_ga9f88dab197e2bd7e0940faf4fd447465}{refract} (const \hyperlink{class_vec3}{Vec3f} \&incident, const \hyperlink{class_vec3}{Vec3f} \&normal, const float \&refarction\+Index)
+\begin{DoxyCompactList}\small\item\em Refraction computation. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__linear__algebra_ga02c442d21d81c8d0cf889f830eddc236}{fresnel} (const \hyperlink{class_vec3}{Vec3f} \&incident, const \hyperlink{class_vec3}{Vec3f} \&normal, const float \&refraction\+Index, float \&kr)
+\begin{DoxyCompactList}\small\item\em amount of reflected and refracted light computation  computes the ratio between two waves\+: parallel and perpendicular polarised light \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ float {\bfseries height} (const \hyperlink{class_vec3}{Vec3f} \&top, const \hyperlink{class_vec3}{Vec3f} \&left, const \hyperlink{class_vec3}{Vec3f} \&right)
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__linear__algebra_gac9237c364274b9a0fbb9184fae573357}{spiral} (const float \&t, const float \&R, const float \&S)
+\item 
+void {\bfseries set\+Color\+And\+Texture} (\hyperlink{class_vec3}{Vec3f} \&object\+Color, \hyperlink{class_vec3}{Vec3f} \&texture\+Color, std\+::string \&texturing)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr float {\bfseries k\+Epsilon} = 1e-\/8
+\end{DoxyCompactItemize}

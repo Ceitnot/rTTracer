@@ -1,0 +1,216 @@
+\hypertarget{group__wrapping__and__description}{}\section{Wrapping and description of the objects}
+\label{group__wrapping__and__description}\index{Wrapping and description of the objects@{Wrapping and description of the objects}}
+
+
+The class stores device pointers to function That\textquotesingle{}s a part of polymorphic architecture.  
+
+
+Collaboration diagram for Wrapping and description of the objects\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{group__wrapping__and__description}
+\end{center}
+\end{figure}
+\subsection*{Modules}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__linear__algebra}{Linear algebra}
+\item 
+\hyperlink{group__lights}{Lights}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_polymorphic}{Polymorphic}
+\item 
+struct \hyperlink{struct_appearence}{Appearence}
+\begin{DoxyCompactList}\small\item\em Class for textural, color and shading detail setups. \end{DoxyCompactList}\item 
+class \hyperlink{class_host_object}{Host\+Object}
+\begin{DoxyCompactList}\small\item\em Parent class for most of the class objects in the project except of \hyperlink{class_triangle}{Triangle} class. \end{DoxyCompactList}\item 
+class \hyperlink{class_mesh}{Mesh}
+\begin{DoxyCompactList}\small\item\em Class for triangulated mesh polygons. \end{DoxyCompactList}\item 
+class \hyperlink{class_sphere}{Sphere}
+\item 
+class \hyperlink{class_plane}{Plane}
+\item 
+class \hyperlink{class_cube}{Cube}
+\item 
+class \hyperlink{class_dev_object}{Dev\+Object}
+\begin{DoxyCompactList}\small\item\em Wrapper class for dynamic polymorphism on the device side. \end{DoxyCompactList}\item 
+class \hyperlink{class_object_box}{Object\+Box}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}{Materyal\+Type} \{ \\*
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{D\+I\+F\+F\+U\+SE}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{R\+E\+F\+L\+E\+C\+T\+I\+ON}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{P\+H\+O\+NG}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{D\+I\+F\+F\+U\+SE}, 
+\\*
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{R\+E\+F\+L\+E\+C\+T\+I\+ON}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{P\+H\+O\+NG}
+ \}\begin{DoxyCompactList}\small\item\em Each of the implemented shading type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}{Procediral\+Texture} \{ \\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{W\+A\+VE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{S\+T\+R\+I\+PS}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{G\+R\+ID}, 
+\\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{C\+H\+E\+C\+K\+ER}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{W\+A\+VE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{S\+T\+R\+I\+PS}, 
+\\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{G\+R\+ID}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{C\+H\+E\+C\+K\+ER}
+ \}\begin{DoxyCompactList}\small\item\em Textural setup. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}{Materyal\+Type} \{ \\*
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{D\+I\+F\+F\+U\+SE}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{R\+E\+F\+L\+E\+C\+T\+I\+ON}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{P\+H\+O\+NG}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{D\+I\+F\+F\+U\+SE}, 
+\\*
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{R\+E\+F\+L\+E\+C\+T\+I\+ON}, 
+\hyperlink{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{P\+H\+O\+NG}
+ \}\begin{DoxyCompactList}\small\item\em Each of the implemented shading type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}{Procediral\+Texture} \{ \\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{W\+A\+VE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{S\+T\+R\+I\+PS}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{G\+R\+ID}, 
+\\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{C\+H\+E\+C\+K\+ER}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{N\+O\+NE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{W\+A\+VE}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{S\+T\+R\+I\+PS}, 
+\\*
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{G\+R\+ID}, 
+\hyperlink{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{C\+H\+E\+C\+K\+ER}
+ \}\begin{DoxyCompactList}\small\item\em Textural setup. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The class stores device pointers to function That\textquotesingle{}s a part of polymorphic architecture. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{Wrapping and description of the objects@{Wrapping and description of the objects}!Materyal\+Type@{Materyal\+Type}}
+\index{Materyal\+Type@{Materyal\+Type}!Wrapping and description of the objects@{Wrapping and description of the objects}}
+\subsubsection[{\texorpdfstring{Materyal\+Type}{MateryalType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Materyal\+Type}}\hypertarget{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}{}\label{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}
+
+
+Each of the implemented shading type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}}\item[{\em 
+D\+I\+F\+F\+U\+SE\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}
+}]a minimum glossiness effect \index{R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}}\item[{\em 
+R\+E\+F\+L\+E\+C\+T\+I\+ON\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}
+}]a mirror surface \index{P\+H\+O\+NG@{P\+H\+O\+NG}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!P\+H\+O\+NG@{P\+H\+O\+NG}}\item[{\em 
+P\+H\+O\+NG\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}
+}]glossiness and shininess being adjusted \index{D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}}\item[{\em 
+D\+I\+F\+F\+U\+SE\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}
+}]a minimum glossiness effect \index{R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}}\item[{\em 
+R\+E\+F\+L\+E\+C\+T\+I\+ON\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}
+}]a mirror surface \index{P\+H\+O\+NG@{P\+H\+O\+NG}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!P\+H\+O\+NG@{P\+H\+O\+NG}}\item[{\em 
+P\+H\+O\+NG\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}
+}]glossiness and shininess being adjusted \end{description}
+\end{Desc}
+\index{Wrapping and description of the objects@{Wrapping and description of the objects}!Materyal\+Type@{Materyal\+Type}}
+\index{Materyal\+Type@{Materyal\+Type}!Wrapping and description of the objects@{Wrapping and description of the objects}}
+\subsubsection[{\texorpdfstring{Materyal\+Type}{MateryalType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Materyal\+Type}}\hypertarget{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}{}\label{group__wrapping__and__description_ga4415a3504a4255d8563ded7496546564}
+
+
+Each of the implemented shading type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}}\item[{\em 
+D\+I\+F\+F\+U\+SE\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}
+}]a minimum glossiness effect \index{R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}}\item[{\em 
+R\+E\+F\+L\+E\+C\+T\+I\+ON\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}
+}]a mirror surface \index{P\+H\+O\+NG@{P\+H\+O\+NG}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!P\+H\+O\+NG@{P\+H\+O\+NG}}\item[{\em 
+P\+H\+O\+NG\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}
+}]glossiness and shininess being adjusted \index{D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!D\+I\+F\+F\+U\+SE@{D\+I\+F\+F\+U\+SE}}\item[{\em 
+D\+I\+F\+F\+U\+SE\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ae24747f0d4ad269225adda5df5feaa2c}
+}]a minimum glossiness effect \index{R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!R\+E\+F\+L\+E\+C\+T\+I\+ON@{R\+E\+F\+L\+E\+C\+T\+I\+ON}}\item[{\em 
+R\+E\+F\+L\+E\+C\+T\+I\+ON\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564abdf82a8e34e808e0be9d4765e88d6692}
+}]a mirror surface \index{P\+H\+O\+NG@{P\+H\+O\+NG}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!P\+H\+O\+NG@{P\+H\+O\+NG}}\item[{\em 
+P\+H\+O\+NG\hypertarget{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}{}\label{group__wrapping__and__description_gga4415a3504a4255d8563ded7496546564ab105fa30ed5e94117ebf6a37008f5e49}
+}]glossiness and shininess being adjusted \end{description}
+\end{Desc}
+\index{Wrapping and description of the objects@{Wrapping and description of the objects}!Procediral\+Texture@{Procediral\+Texture}}
+\index{Procediral\+Texture@{Procediral\+Texture}!Wrapping and description of the objects@{Wrapping and description of the objects}}
+\subsubsection[{\texorpdfstring{Procediral\+Texture}{ProcediralTexture}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Procediral\+Texture}}\hypertarget{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}{}\label{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}
+
+
+Textural setup. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+NE@{N\+O\+NE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]no texture \index{W\+A\+VE@{W\+A\+VE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!W\+A\+VE@{W\+A\+VE}}\item[{\em 
+W\+A\+VE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}
+}]blurred wave pattern \index{S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}}\item[{\em 
+S\+T\+R\+I\+PS\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}
+}]lines/strips pattern \index{G\+R\+ID@{G\+R\+ID}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!G\+R\+ID@{G\+R\+ID}}\item[{\em 
+G\+R\+ID\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}
+}]blurred grid pattern \index{C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}}\item[{\em 
+C\+H\+E\+C\+K\+ER\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}
+}]checker pattern \index{N\+O\+NE@{N\+O\+NE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]no texture \index{W\+A\+VE@{W\+A\+VE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!W\+A\+VE@{W\+A\+VE}}\item[{\em 
+W\+A\+VE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}
+}]blurred wave pattern \index{S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}}\item[{\em 
+S\+T\+R\+I\+PS\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}
+}]lines/strips pattern \index{G\+R\+ID@{G\+R\+ID}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!G\+R\+ID@{G\+R\+ID}}\item[{\em 
+G\+R\+ID\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}
+}]blurred grid pattern \index{C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}}\item[{\em 
+C\+H\+E\+C\+K\+ER\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}
+}]checker pattern \end{description}
+\end{Desc}
+\index{Wrapping and description of the objects@{Wrapping and description of the objects}!Procediral\+Texture@{Procediral\+Texture}}
+\index{Procediral\+Texture@{Procediral\+Texture}!Wrapping and description of the objects@{Wrapping and description of the objects}}
+\subsubsection[{\texorpdfstring{Procediral\+Texture}{ProcediralTexture}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Procediral\+Texture}}\hypertarget{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}{}\label{group__wrapping__and__description_gadbd34cc71bd63d767b48ef9a2fc91c7b}
+
+
+Textural setup. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+NE@{N\+O\+NE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]no texture \index{W\+A\+VE@{W\+A\+VE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!W\+A\+VE@{W\+A\+VE}}\item[{\em 
+W\+A\+VE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}
+}]blurred wave pattern \index{S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}}\item[{\em 
+S\+T\+R\+I\+PS\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}
+}]lines/strips pattern \index{G\+R\+ID@{G\+R\+ID}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!G\+R\+ID@{G\+R\+ID}}\item[{\em 
+G\+R\+ID\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}
+}]blurred grid pattern \index{C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}}\item[{\em 
+C\+H\+E\+C\+K\+ER\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}
+}]checker pattern \index{N\+O\+NE@{N\+O\+NE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!N\+O\+NE@{N\+O\+NE}}\item[{\em 
+N\+O\+NE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bac157bdf0b85a40d2619cbc8bc1ae5fe2}
+}]no texture \index{W\+A\+VE@{W\+A\+VE}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!W\+A\+VE@{W\+A\+VE}}\item[{\em 
+W\+A\+VE\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba4025728e15f4cee76a85d2cc65ccb565}
+}]blurred wave pattern \index{S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!S\+T\+R\+I\+PS@{S\+T\+R\+I\+PS}}\item[{\em 
+S\+T\+R\+I\+PS\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7ba7722877891b40e3f2d2b413d06067894}
+}]lines/strips pattern \index{G\+R\+ID@{G\+R\+ID}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!G\+R\+ID@{G\+R\+ID}}\item[{\em 
+G\+R\+ID\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bafbf4fa9eb81ba842a80a29b45064e348}
+}]blurred grid pattern \index{C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}!Wrapping and description of the objects@{Wrapping and description of the objects}}\index{Wrapping and description of the objects@{Wrapping and description of the objects}!C\+H\+E\+C\+K\+ER@{C\+H\+E\+C\+K\+ER}}\item[{\em 
+C\+H\+E\+C\+K\+ER\hypertarget{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}{}\label{group__wrapping__and__description_ggadbd34cc71bd63d767b48ef9a2fc91c7bade60519f49c1d1276c2df9c2dc500297}
+}]checker pattern \end{description}
+\end{Desc}

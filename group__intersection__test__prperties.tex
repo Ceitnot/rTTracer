@@ -1,0 +1,716 @@
+\hypertarget{group__intersection__test__prperties}{}\section{Intersection tests and hit object properties}
+\label{group__intersection__test__prperties}\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+Collaboration diagram for Intersection tests and hit object properties\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{group__intersection__test__prperties}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}{intersect\+Mesh} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a mesh. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}{intersect\+Sphere} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a sphere. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}{intersect\+Plane} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a plane. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}{intersect\+Cube} (\hyperlink{class_ray}{Ray} \&ray, \hyperlink{class_dev_object}{Dev\+Object} \&obj, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctxt)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a cube. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool \hyperlink{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{intersect\+Bounding\+Volume} (\hyperlink{class_ray}{Ray} \&ray, float(\&precompute)\mbox{[}2\mbox{]}\mbox{[}7\mbox{]}, \hyperlink{class_dev_object}{Dev\+Object} \&current\+Object, uint8\+\_\+t \&normal\+Index)
+\begin{DoxyCompactList}\small\item\em Checks if a ray intersects a bounding slabs of a triangle mesh. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}{mesh\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets mesh properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}{sphere\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets sphere properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}{plane\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets plane properties on a hitpoint. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}{cube\+Properties} (const \hyperlink{class_dev_object}{Dev\+Object} \&object, const \hyperlink{class_vec3}{Vec3f} \&hit\+Point, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&ctx, \hyperlink{class_vec2}{Vec2f} \&hit\+Texture\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Gets cube properties on a hitpoint. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gae4e3caaa9b4a37b20a8a6f84d0c326aa}{delete\+Mesh} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object)
+\begin{DoxyCompactList}\small\item\em Device memory deallocation function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}{transform\+Mesh} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Whole mesh translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}{transform\+Sphere} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}{transform\+Plane} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}{transform\+Cube} (\hyperlink{class_dev_object}{Dev\+Object} $\ast$object, const \hyperlink{class_square_matrix4}{Square\+Matrix4f} \&m\+Transform)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ \hyperlink{class_vec3}{Vec3f} \hyperlink{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{distant\+Light\+Reflected\+Color} (const \hyperlink{class_i_light}{I\+Light} $\ast$\+\_\+light, \hyperlink{struct_g_p_u_1_1_rendering_context}{G\+P\+U\+::\+Rendering\+Context} \&rctx, \hyperlink{class_vec3}{Vec3f} \&albedo)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_appearence}{Appearence} of incident light. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}{illuminate\+Distant} (const \hyperlink{class_i_light}{I\+Light} \&light, const \hyperlink{class_vec3}{Vec3f} \&P, \hyperlink{class_vec3}{Vec3f} \&light\+Dir, \hyperlink{class_vec3}{Vec3f} \&light\+Intensity, float \&distance)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ void \hyperlink{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}{illuminate\+Point} (const \hyperlink{class_i_light}{I\+Light} \&light, const \hyperlink{class_vec3}{Vec3f} \&P, \hyperlink{class_vec3}{Vec3f} \&light\+Dir, \hyperlink{class_vec3}{Vec3f} \&light\+Intensity, float \&distance)
+\begin{DoxyCompactList}\small\item\em Implicit sphere translation, rotation and scale function. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}{set\+Mesh\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}{set\+Sphere\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}{set\+Plane\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+void \hyperlink{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}{set\+Cube\+Acceleration\+Volume} (const \hyperlink{class_dev_object}{Dev\+Object} $\ast$current\+Object, \hyperlink{class_boundaries}{Boundaries} $\ast$boundaries, \hyperlink{class_vec3}{Vec3f}(\&bounding\+Plane\+Normals)\mbox{[}7\mbox{]}, float $\ast$(\&gpu\+\_\+all\+Dot\+Products)\mbox{[}7\mbox{]})
+\begin{DoxyCompactList}\small\item\em The function gets bounding volume distances computed. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}{strips} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}{wave} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}{grid} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}{checker} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Computes pattern at a particular point in texture. \end{DoxyCompactList}\item 
+\+\_\+\+\_\+device\+\_\+\+\_\+ float \hyperlink{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}{none} (const \hyperlink{class_vec2}{Vec2f} \&hit\+Tex\+Coordinates)
+\begin{DoxyCompactList}\small\item\em Function just for capability with pattern calculation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Function Documentation}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!checker@{checker}}
+\index{checker@{checker}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{checker(const Vec2f \&hit\+Tex\+Coordinates)}{checker(const Vec2f \&hitTexCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ float checker (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{hit\+Tex\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}{}\label{group__intersection__test__prperties_ga100df37360dfe6954f51431bc6343dc6}
+
+
+Computes pattern at a particular point in texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit\+Tex\+Coordinates} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a normalized floating point number 
+\end{DoxyReturn}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!cube\+Properties@{cube\+Properties}}
+\index{cube\+Properties@{cube\+Properties}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{cube\+Properties(const Dev\+Object \&object, const Vec3f \&hit\+Point, G\+P\+U\+::\+Rendering\+Context \&ctx, Vec2f \&hit\+Texture\+Coordinates)}{cubeProperties(const DevObject \&object, const Vec3f \&hitPoint, GPU::RenderingContext \&ctx, Vec2f \&hitTextureCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void cube\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} \&}]{object, }
+\item[{const {\bf Vec3f} \&}]{hit\+Point, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctx, }
+\item[{{\bf Vec2f} \&}]{hit\+Texture\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}{}\label{group__intersection__test__prperties_ga33e6e14712999e0675085b5479201656}
+
+
+Gets cube properties on a hitpoint. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em hit\+Point} & -\/ output argument to get hit point \\
+\hline
+\mbox{\tt out}  & {\em ctx} & -\/ output argument to get texture barycentric coordinates \\
+\hline
+\mbox{\tt out}  & {\em hit\+Texture\+Coordinates} & -\/ texture coordinates with regards to barycentric coordinates of hit point. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!delete\+Mesh@{delete\+Mesh}}
+\index{delete\+Mesh@{delete\+Mesh}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{delete\+Mesh(\+Dev\+Object $\ast$object)}{deleteMesh(DevObject *object)}}]{\setlength{\rightskip}{0pt plus 5cm}void delete\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Object} $\ast$}]{object}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gae4e3caaa9b4a37b20a8a6f84d0c326aa}{}\label{group__intersection__test__prperties_gae4e3caaa9b4a37b20a8a6f84d0c326aa}
+
+
+Device memory deallocation function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{group__intersection__test__prperties_gae4e3caaa9b4a37b20a8a6f84d0c326aa_icgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!distant\+Light\+Reflected\+Color@{distant\+Light\+Reflected\+Color}}
+\index{distant\+Light\+Reflected\+Color@{distant\+Light\+Reflected\+Color}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{distant\+Light\+Reflected\+Color(const I\+Light $\ast$\+\_\+light, G\+P\+U\+::\+Rendering\+Context \&rctx, Vec3f \&albedo)}{distantLightReflectedColor(const ILight *\_light, GPU::RenderingContext \&rctx, Vec3f \&albedo)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ {\bf Vec3f} distant\+Light\+Reflected\+Color (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Light} $\ast$}]{\+\_\+light, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{rctx, }
+\item[{{\bf Vec3f} \&}]{albedo}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}{}\label{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e}
+
+
+\hyperlink{struct_appearence}{Appearence} of incident light. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \+\_\+light} & -\/ wrapper with a specific light\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em rctx} & \\
+\hline
+\mbox{\tt in}  & {\em albedo} & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__intersection__test__prperties_ga19abb6bc50199d8583aafedd0e044b7e_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!grid@{grid}}
+\index{grid@{grid}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{grid(const Vec2f \&hit\+Tex\+Coordinates)}{grid(const Vec2f \&hitTexCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ float grid (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{hit\+Tex\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}{}\label{group__intersection__test__prperties_ga4db329f1c6b211cd0ac9e6dc297f279e}
+
+
+Computes pattern at a particular point in texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit\+Tex\+Coordinates} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a normalized floating point number 
+\end{DoxyReturn}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!illuminate\+Distant@{illuminate\+Distant}}
+\index{illuminate\+Distant@{illuminate\+Distant}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{illuminate\+Distant(const I\+Light \&light, const Vec3f \&\+P, Vec3f \&light\+Dir, Vec3f \&light\+Intensity, float \&distance)}{illuminateDistant(const ILight \&light, const Vec3f \&P, Vec3f \&lightDir, Vec3f \&lightIntensity, float \&distance)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void illuminate\+Distant (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Light} \&}]{light, }
+\item[{const {\bf Vec3f} \&}]{P, }
+\item[{{\bf Vec3f} \&}]{light\+Dir, }
+\item[{{\bf Vec3f} \&}]{light\+Intensity, }
+\item[{float \&}]{distance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}{}\label{group__intersection__test__prperties_ga6a438778f6ed8683785d7a892a05d312}
+
+
+Implicit sphere translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em light} & -\/ wrapper with a specific light\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em P} & -\/ not used here \\
+\hline
+\mbox{\tt in}  & {\em light\+Dir} & -\/ light direction. \\
+\hline
+\mbox{\tt in}  & {\em light\+Intensity} & \\
+\hline
+\mbox{\tt in}  & {\em distance} & -\/ not used here. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!illuminate\+Point@{illuminate\+Point}}
+\index{illuminate\+Point@{illuminate\+Point}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{illuminate\+Point(const I\+Light \&light, const Vec3f \&\+P, Vec3f \&light\+Dir, Vec3f \&light\+Intensity, float \&distance)}{illuminatePoint(const ILight \&light, const Vec3f \&P, Vec3f \&lightDir, Vec3f \&lightIntensity, float \&distance)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void illuminate\+Point (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+Light} \&}]{light, }
+\item[{const {\bf Vec3f} \&}]{P, }
+\item[{{\bf Vec3f} \&}]{light\+Dir, }
+\item[{{\bf Vec3f} \&}]{light\+Intensity, }
+\item[{float \&}]{distance}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}{}\label{group__intersection__test__prperties_gab3c663df5b5a29d04083e7793bce50d5}
+
+
+Implicit sphere translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em light} & -\/ wrapper with a specific light\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em P} & -\/ light source position. \\
+\hline
+\mbox{\tt out}  & {\em light\+Dir} & -\/ light direction. \\
+\hline
+\mbox{\tt out}  & {\em light\+Intensity} & \\
+\hline
+\mbox{\tt out}  & {\em distance} & -\/ distance to light source \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!intersect\+Bounding\+Volume@{intersect\+Bounding\+Volume}}
+\index{intersect\+Bounding\+Volume@{intersect\+Bounding\+Volume}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{intersect\+Bounding\+Volume(\+Ray \&ray, float(\&precompute)[2][7], Dev\+Object \&current\+Object, uint8\+\_\+t \&normal\+Index)}{intersectBoundingVolume(Ray \&ray, float(\&precompute)[2][7], DevObject \&currentObject, uint8\_t \&normalIndex)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool intersect\+Bounding\+Volume (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{ray, }
+\item[{float(\&)}]{precompute\mbox{[}2\mbox{]}\mbox{[}7\mbox{]}, }
+\item[{{\bf Dev\+Object} \&}]{current\+Object, }
+\item[{uint8\+\_\+t \&}]{normal\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}{}\label{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63}
+
+
+Checks if a ray intersects a bounding slabs of a triangle mesh. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ray} & -\/ the ray structure \\
+\hline
+\mbox{\tt out}  & {\em precompute} & -\/ a precomputed( in Object\+Box\+::hit ) array of dot products divisions \\
+\hline
+\mbox{\tt out}  & {\em current\+Object} & wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em normal\+Index} & -\/ needed to get a normal of a slab. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{group__intersection__test__prperties_gaf6bbee9e8a6ee564017fa94cd9e6ec63_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!intersect\+Cube@{intersect\+Cube}}
+\index{intersect\+Cube@{intersect\+Cube}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{intersect\+Cube(\+Ray \&ray, Dev\+Object \&obj, G\+P\+U\+::\+Rendering\+Context \&ctxt)}{intersectCube(Ray \&ray, DevObject \&obj, GPU::RenderingContext \&ctxt)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool intersect\+Cube (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{ray, }
+\item[{{\bf Dev\+Object} \&}]{obj, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctxt}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}{}\label{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2}
+
+
+Checks if a ray intersects a cube. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ray} & -\/ the ray structure \\
+\hline
+\mbox{\tt out}  & {\em obj} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em ctxt} & -\/ structure gets texture coordinates etc. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{group__intersection__test__prperties_gae4778d3b0c160c9757d7fca0e5deefa2_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!intersect\+Mesh@{intersect\+Mesh}}
+\index{intersect\+Mesh@{intersect\+Mesh}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{intersect\+Mesh(\+Ray \&ray, Dev\+Object \&obj, G\+P\+U\+::\+Rendering\+Context \&ctxt)}{intersectMesh(Ray \&ray, DevObject \&obj, GPU::RenderingContext \&ctxt)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool intersect\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{ray, }
+\item[{{\bf Dev\+Object} \&}]{obj, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctxt}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}{}\label{group__intersection__test__prperties_gac9af7cfe676f4df793dea5bc53171161}
+
+
+Checks if a ray intersects a mesh. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em ray} & -\/ the ray structure \\
+\hline
+\mbox{\tt out}  & {\em obj} & wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em ctxt} & structure gets texture coordinates etc. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!intersect\+Plane@{intersect\+Plane}}
+\index{intersect\+Plane@{intersect\+Plane}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{intersect\+Plane(\+Ray \&ray, Dev\+Object \&obj, G\+P\+U\+::\+Rendering\+Context \&ctxt)}{intersectPlane(Ray \&ray, DevObject \&obj, GPU::RenderingContext \&ctxt)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool intersect\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{ray, }
+\item[{{\bf Dev\+Object} \&}]{obj, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctxt}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}{}\label{group__intersection__test__prperties_gafbcfd99d540347f9f63d01d6d0b6eef5}
+
+
+Checks if a ray intersects a plane. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ray} & -\/ the ray structure \\
+\hline
+\mbox{\tt out}  & {\em obj} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em ctxt} & -\/ structure gets texture coordinates etc. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!intersect\+Sphere@{intersect\+Sphere}}
+\index{intersect\+Sphere@{intersect\+Sphere}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{intersect\+Sphere(\+Ray \&ray, Dev\+Object \&obj, G\+P\+U\+::\+Rendering\+Context \&ctxt)}{intersectSphere(Ray \&ray, DevObject \&obj, GPU::RenderingContext \&ctxt)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ bool intersect\+Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf Ray} \&}]{ray, }
+\item[{{\bf Dev\+Object} \&}]{obj, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctxt}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}{}\label{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699}
+
+
+Checks if a ray intersects a sphere. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em ray} & -\/ the ray structure \\
+\hline
+\mbox{\tt out}  & {\em obj} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em ctxt} & -\/ structure gets texture coordinates etc. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{group__intersection__test__prperties_ga8c05ac13c3cdd49f7e4fa3948cfa4699_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!mesh\+Properties@{mesh\+Properties}}
+\index{mesh\+Properties@{mesh\+Properties}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{mesh\+Properties(const Dev\+Object \&object, const Vec3f \&hit\+Point, G\+P\+U\+::\+Rendering\+Context \&ctx, Vec2f \&hit\+Texture\+Coordinates)}{meshProperties(const DevObject \&object, const Vec3f \&hitPoint, GPU::RenderingContext \&ctx, Vec2f \&hitTextureCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void mesh\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} \&}]{object, }
+\item[{const {\bf Vec3f} \&}]{hit\+Point, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctx, }
+\item[{{\bf Vec2f} \&}]{hit\+Texture\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}{}\label{group__intersection__test__prperties_gaa26e85d7aac46c25d6a1b975423f968d}
+
+
+Gets mesh properties on a hitpoint. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em hit\+Point} & -\/ output argument to get hit point \\
+\hline
+\mbox{\tt out}  & {\em ctx} & -\/ output argument to get texture barycentric coordinates \\
+\hline
+\mbox{\tt out}  & {\em hit\+Texture\+Coordinates} & -\/ texture coordinates with regards to barycentric coordinates of hit point. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!none@{none}}
+\index{none@{none}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{none(const Vec2f \&hit\+Tex\+Coordinates)}{none(const Vec2f \&hitTexCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ float none (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{hit\+Tex\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}{}\label{group__intersection__test__prperties_ga6ea9f9e6624268a263962a17c6634feb}
+
+
+Function just for capability with pattern calculation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit\+Tex\+Coordinates} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero or one 
+\end{DoxyReturn}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!plane\+Properties@{plane\+Properties}}
+\index{plane\+Properties@{plane\+Properties}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{plane\+Properties(const Dev\+Object \&object, const Vec3f \&hit\+Point, G\+P\+U\+::\+Rendering\+Context \&ctx, Vec2f \&hit\+Texture\+Coordinates)}{planeProperties(const DevObject \&object, const Vec3f \&hitPoint, GPU::RenderingContext \&ctx, Vec2f \&hitTextureCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void plane\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} \&}]{object, }
+\item[{const {\bf Vec3f} \&}]{hit\+Point, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctx, }
+\item[{{\bf Vec2f} \&}]{hit\+Texture\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}{}\label{group__intersection__test__prperties_gae25700b3104d615db9d575d086c3d994}
+
+
+Gets plane properties on a hitpoint. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em hit\+Point} & -\/ output argument to get hit point \\
+\hline
+\mbox{\tt out}  & {\em ctx} & -\/ output argument to get texture barycentric coordinates \\
+\hline
+\mbox{\tt out}  & {\em hit\+Texture\+Coordinates} & -\/ texture coordinates with regards to barycentric coordinates of hit point. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!set\+Cube\+Acceleration\+Volume@{set\+Cube\+Acceleration\+Volume}}
+\index{set\+Cube\+Acceleration\+Volume@{set\+Cube\+Acceleration\+Volume}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{set\+Cube\+Acceleration\+Volume(const Dev\+Object $\ast$current\+Object, Boundaries $\ast$boundaries, Vec3f(\&bounding\+Plane\+Normals)[7], float $\ast$(\&gpu\+\_\+all\+Dot\+Products)[7])}{setCubeAccelerationVolume(const DevObject *currentObject, Boundaries *boundaries, Vec3f(\&boundingPlaneNormals)[7], float *(\&gpu\_allDotProducts)[7])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Cube\+Acceleration\+Volume (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} $\ast$}]{current\+Object, }
+\item[{{\bf Boundaries} $\ast$}]{boundaries, }
+\item[{{\bf Vec3f}(\&)}]{bounding\+Plane\+Normals\mbox{[}7\mbox{]}, }
+\item[{float $\ast$(\&)}]{gpu\+\_\+all\+Dot\+Products\mbox{[}7\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}{}\label{group__intersection__test__prperties_gabfac85fdf9d0cceb70aefa4c2ed71ad2}
+
+
+The function gets bounding volume distances computed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper object with pointer to the stored in device memory specific instance. \\
+\hline
+\mbox{\tt out}  & {\em boundaries} & -\/ to store result \\
+\hline
+\mbox{\tt in}  & {\em bounding\+Plane\+Normals} & -\/ bounding plane orientation normals. \\
+\hline
+\mbox{\tt out}  & {\em gpu\+\_\+all\+Dot\+Products} & -\/ allocated in advance device memory to store all possible distances the function uses. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!set\+Mesh\+Acceleration\+Volume@{set\+Mesh\+Acceleration\+Volume}}
+\index{set\+Mesh\+Acceleration\+Volume@{set\+Mesh\+Acceleration\+Volume}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{set\+Mesh\+Acceleration\+Volume(const Dev\+Object $\ast$current\+Object, Boundaries $\ast$boundaries, Vec3f(\&bounding\+Plane\+Normals)[7], float $\ast$(\&gpu\+\_\+all\+Dot\+Products)[7])}{setMeshAccelerationVolume(const DevObject *currentObject, Boundaries *boundaries, Vec3f(\&boundingPlaneNormals)[7], float *(\&gpu\_allDotProducts)[7])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Mesh\+Acceleration\+Volume (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} $\ast$}]{current\+Object, }
+\item[{{\bf Boundaries} $\ast$}]{boundaries, }
+\item[{{\bf Vec3f}(\&)}]{bounding\+Plane\+Normals\mbox{[}7\mbox{]}, }
+\item[{float $\ast$(\&)}]{gpu\+\_\+all\+Dot\+Products\mbox{[}7\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}{}\label{group__intersection__test__prperties_ga672ecbee3aea2f5567ad7a2611feef3e}
+
+
+The function gets bounding volume distances computed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em current\+Object} & -\/ wrapper object with pointer to the stored in device memory specific instance. \\
+\hline
+\mbox{\tt out}  & {\em boundaries} & -\/ to store result \\
+\hline
+\mbox{\tt in}  & {\em bounding\+Plane\+Normals} & -\/ bounding plane orientation normals. \\
+\hline
+\mbox{\tt out}  & {\em gpu\+\_\+all\+Dot\+Products} & -\/ allocated in advance device memory to store all possible distances the function uses. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!set\+Plane\+Acceleration\+Volume@{set\+Plane\+Acceleration\+Volume}}
+\index{set\+Plane\+Acceleration\+Volume@{set\+Plane\+Acceleration\+Volume}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{set\+Plane\+Acceleration\+Volume(const Dev\+Object $\ast$current\+Object, Boundaries $\ast$boundaries, Vec3f(\&bounding\+Plane\+Normals)[7], float $\ast$(\&gpu\+\_\+all\+Dot\+Products)[7])}{setPlaneAccelerationVolume(const DevObject *currentObject, Boundaries *boundaries, Vec3f(\&boundingPlaneNormals)[7], float *(\&gpu\_allDotProducts)[7])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Plane\+Acceleration\+Volume (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} $\ast$}]{current\+Object, }
+\item[{{\bf Boundaries} $\ast$}]{boundaries, }
+\item[{{\bf Vec3f}(\&)}]{bounding\+Plane\+Normals\mbox{[}7\mbox{]}, }
+\item[{float $\ast$(\&)}]{gpu\+\_\+all\+Dot\+Products\mbox{[}7\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}{}\label{group__intersection__test__prperties_ga684f41eb2add27e32a7c0115cdd6cce1}
+
+
+The function gets bounding volume distances computed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper object with pointer to the stored in device memory specific instance. \\
+\hline
+\mbox{\tt out}  & {\em boundaries} & -\/ to store result \\
+\hline
+\mbox{\tt in}  & {\em bounding\+Plane\+Normals} & -\/ bounding plane orientation normals. \\
+\hline
+\mbox{\tt out}  & {\em gpu\+\_\+all\+Dot\+Products} & -\/ allocated in advance device memory to store all possible distances the function uses. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!set\+Sphere\+Acceleration\+Volume@{set\+Sphere\+Acceleration\+Volume}}
+\index{set\+Sphere\+Acceleration\+Volume@{set\+Sphere\+Acceleration\+Volume}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{set\+Sphere\+Acceleration\+Volume(const Dev\+Object $\ast$current\+Object, Boundaries $\ast$boundaries, Vec3f(\&bounding\+Plane\+Normals)[7], float $\ast$(\&gpu\+\_\+all\+Dot\+Products)[7])}{setSphereAccelerationVolume(const DevObject *currentObject, Boundaries *boundaries, Vec3f(\&boundingPlaneNormals)[7], float *(\&gpu\_allDotProducts)[7])}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Sphere\+Acceleration\+Volume (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} $\ast$}]{current\+Object, }
+\item[{{\bf Boundaries} $\ast$}]{boundaries, }
+\item[{{\bf Vec3f}(\&)}]{bounding\+Plane\+Normals\mbox{[}7\mbox{]}, }
+\item[{float $\ast$(\&)}]{gpu\+\_\+all\+Dot\+Products\mbox{[}7\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}{}\label{group__intersection__test__prperties_gafd2f15ce4a55fb0d8daee0bff024b67b}
+
+
+The function gets bounding volume distances computed. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em current\+Object} & -\/ wrapper object with pointer to the stored in device memory specific instance. \\
+\hline
+\mbox{\tt out}  & {\em boundaries} & -\/ to store result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Parameters down bellow are not used in this function\+: 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em bounding\+Plane\+Normals} & \\
+\hline
+{\em gpu\+\_\+all\+Dot\+Products} & \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!sphere\+Properties@{sphere\+Properties}}
+\index{sphere\+Properties@{sphere\+Properties}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{sphere\+Properties(const Dev\+Object \&object, const Vec3f \&hit\+Point, G\+P\+U\+::\+Rendering\+Context \&ctx, Vec2f \&hit\+Texture\+Coordinates)}{sphereProperties(const DevObject \&object, const Vec3f \&hitPoint, GPU::RenderingContext \&ctx, Vec2f \&hitTextureCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+host\+\_\+\+\_\+ \+\_\+\+\_\+device\+\_\+\+\_\+ void sphere\+Properties (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dev\+Object} \&}]{object, }
+\item[{const {\bf Vec3f} \&}]{hit\+Point, }
+\item[{{\bf G\+P\+U\+::\+Rendering\+Context} \&}]{ctx, }
+\item[{{\bf Vec2f} \&}]{hit\+Texture\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}{}\label{group__intersection__test__prperties_gae821d5671069271f7c39d22ca8950f3d}
+
+
+Gets sphere properties on a hitpoint. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt out}  & {\em hit\+Point} & -\/ output argument to get hit point \\
+\hline
+\mbox{\tt out}  & {\em ctx} & -\/ output argument to get texture barycentric coordinates \\
+\hline
+\mbox{\tt out}  & {\em hit\+Texture\+Coordinates} & -\/ texture coordinates with regards to barycentric coordinates of hit point. \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!strips@{strips}}
+\index{strips@{strips}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{strips(const Vec2f \&hit\+Tex\+Coordinates)}{strips(const Vec2f \&hitTexCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ float strips (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{hit\+Tex\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}{}\label{group__intersection__test__prperties_gae0b690ff7b5f9b93e53bb0c1437fbf55}
+
+
+Computes pattern at a particular point in texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit\+Tex\+Coordinates} & \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!transform\+Cube@{transform\+Cube}}
+\index{transform\+Cube@{transform\+Cube}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{transform\+Cube(\+Dev\+Object $\ast$object, const Square\+Matrix4f \&m\+Transform)}{transformCube(DevObject *object, const SquareMatrix4f \&mTransform)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void transform\+Cube (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Object} $\ast$}]{object, }
+\item[{const {\bf Square\+Matrix4f} \&}]{m\+Transform}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}{}\label{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55}
+
+
+Implicit sphere translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em m\+Transform} & -\/ object-\/to-\/world matrix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{group__intersection__test__prperties_ga00e56ff810e7ba397e903acf50626b55_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!transform\+Mesh@{transform\+Mesh}}
+\index{transform\+Mesh@{transform\+Mesh}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{transform\+Mesh(\+Dev\+Object $\ast$object, const Square\+Matrix4f \&m\+Transform)}{transformMesh(DevObject *object, const SquareMatrix4f \&mTransform)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void transform\+Mesh (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Object} $\ast$}]{object, }
+\item[{const {\bf Square\+Matrix4f} \&}]{m\+Transform}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}{}\label{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af}
+
+
+Whole mesh translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em m\+Transform} & -\/ object-\/to-\/world matrix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{group__intersection__test__prperties_ga4b2a399a49c34312c8369f54b79230af_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!transform\+Plane@{transform\+Plane}}
+\index{transform\+Plane@{transform\+Plane}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{transform\+Plane(\+Dev\+Object $\ast$object, const Square\+Matrix4f \&m\+Transform)}{transformPlane(DevObject *object, const SquareMatrix4f \&mTransform)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void transform\+Plane (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Object} $\ast$}]{object, }
+\item[{const {\bf Square\+Matrix4f} \&}]{m\+Transform}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}{}\label{group__intersection__test__prperties_ga6d2ae68047e8f8d11a64b9dc9dda507d}
+
+
+Implicit sphere translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em m\+Transform} & -\/ object-\/to-\/world matrix \\
+\hline
+\end{DoxyParams}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!transform\+Sphere@{transform\+Sphere}}
+\index{transform\+Sphere@{transform\+Sphere}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{transform\+Sphere(\+Dev\+Object $\ast$object, const Square\+Matrix4f \&m\+Transform)}{transformSphere(DevObject *object, const SquareMatrix4f \&mTransform)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ void transform\+Sphere (
+\begin{DoxyParamCaption}
+\item[{{\bf Dev\+Object} $\ast$}]{object, }
+\item[{const {\bf Square\+Matrix4f} \&}]{m\+Transform}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}{}\label{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490}
+
+
+Implicit sphere translation, rotation and scale function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em object} & -\/ wrapper with a specific object\textquotesingle{}s data \\
+\hline
+\mbox{\tt in}  & {\em m\+Transform} & -\/ object-\/to-\/world matrix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{group__intersection__test__prperties_ga6fe7123c4c4bdf775eac1231bc37c490_cgraph}
+\end{center}
+\end{figure}
+\index{Intersection tests and hit object properties@{Intersection tests and hit object properties}!wave@{wave}}
+\index{wave@{wave}!Intersection tests and hit object properties@{Intersection tests and hit object properties}}
+\subsubsection[{\texorpdfstring{wave(const Vec2f \&hit\+Tex\+Coordinates)}{wave(const Vec2f \&hitTexCoordinates)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+device\+\_\+\+\_\+ float wave (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vec2f} \&}]{hit\+Tex\+Coordinates}
+\end{DoxyParamCaption}
+)}\hypertarget{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}{}\label{group__intersection__test__prperties_gaff97add1678535636b1f4f1ca3f7a96c}
+
+
+Computes pattern at a particular point in texture. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit\+Tex\+Coordinates} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zero or one 
+\end{DoxyReturn}

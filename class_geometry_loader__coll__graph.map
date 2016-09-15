@@ -1,0 +1,12 @@
+<map id="GeometryLoader&lt; ObjectsType, BoundingVolumeType &gt;" name="GeometryLoader&lt; ObjectsType, BoundingVolumeType &gt;">
+<area shape="rect" id="node2" href="$class_object_box.html" title="ObjectBox" alt="" coords="444,427,527,453"/>
+<area shape="rect" id="node3" href="$class_vec3.html" title="Vec3" alt="" coords="470,95,522,121"/>
+<area shape="rect" id="node9" href="$class_ray.html" title="Ray" alt="" coords="537,215,583,241"/>
+<area shape="rect" id="node10" href="$struct_appearence.html" title="Class for textural, color and shading detail setups. " alt="" coords="344,215,435,241"/>
+<area shape="rect" id="node12" href="$class_i_light.html" title="Area lights. " alt="" coords="207,329,262,355"/>
+<area shape="rect" id="node4" href="$class_dev_object.html" title="Wrapper class for dynamic polymorphism on the device side. " alt="" coords="443,329,527,355"/>
+<area shape="rect" id="node5" href="$class_square_matrix4.html" title="SquareMatrix4\&lt; float \&gt;" alt="" coords="5,215,160,241"/>
+<area shape="rect" id="node6" href="$class_square_matrix4.html" title="SquareMatrix4\&lt; T \&gt;" alt="" coords="13,95,152,121"/>
+<area shape="rect" id="node8" href="$class_vec2.html" title="Vec2" alt="" coords="627,215,679,241"/>
+<area shape="rect" id="node11" href="$class_color.html" title="Color" alt="" coords="459,215,512,241"/>
+</map>
