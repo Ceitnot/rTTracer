@@ -1,0 +1,13 @@
+html/
+build/*
+Debug/*
+Release/*
+*.obj
+*.geo
+*.log
+debug*
+*~
+*.ppm
+*.mtl
+*.txt
+docs/
