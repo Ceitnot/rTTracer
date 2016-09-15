@@ -256,9 +256,11 @@ public:
 			{
 				setTextureNames();
 				runDemo();
-				 //allocate helper memory
-				allocateAllDotProduct();
-				packScene();
+				if(objects.size()){
+					 //allocate helper memory
+					allocateAllDotProduct();
+					packScene();
+				}
 			}
 	GeometryLoader(const std::vector<std::unique_ptr<HostObject>>& host_obj
 			, const std::vector<ILight>& lights
@@ -399,89 +401,90 @@ public:
 				input<int>(&numberOfProceduralMeshes, ( (std::string("Input a number of ") + query) + "s:").c_str());
 				if(numberOfProceduralMeshes){
 
-					for(int i = 0; i < numberOfProceduralMeshes; ++i){
+					for(int i = 0; i < numberOfProceduralMeshes;){
 						float3 RGB[2];
 						//set material
-						input<std::string>(&materialType, "Input the material type [diffuse|phong|reflective]");
+							input<std::string>(&materialType, "Input the material type [diffuse|phong|reflective]");
 						if(materialType == "diffuse"){
 							setColorAndTexture(RGB, texturing);
 							appearence = Appearence(RGB[0], 0.9, 0.04, 50
 									   						 , texturing.c_str()).setTextureColor( RGB[1] );
+
 						}else if(materialType == "reflective"){
 							appearence = Appearence(0.8);
 							appearence.setTextureColor(scene.backgroundColor );
 							appearence.setObjectColor(scene.backgroundColor );
+
 						}else if(materialType == "phong"){
 							setColorAndTexture(RGB, texturing);
 							float3 diffuseSpecularExponent;// diffuse weight, specular weight, specular exponent
 							std::cout<<"Input diffuse weight, specular weight, specular exponent separated with whitespaces or new line :"<<std::endl;
 							std::cin>>diffuseSpecularExponent;
 							appearence = Appearence(RGB[0], diffuseSpecularExponent.x, diffuseSpecularExponent.y, diffuseSpecularExponent.z , texturing.c_str() ).setTextureColor( RGB[1] );
+
 						}else{
-							setColorAndTexture(RGB, texturing);
-							materialType = "none";
-							appearence = Appearence(RGB[0],
-														DIFFUSE, 0.18f
-														, texturing.c_str() ).setTextureColor( RGB[1] );
+								std::cout<<std::string("Material: ") + materialType + " is not supported."<<std::endl;
+								continue;
+						}
+						if(query == "sphere"){
+								pipeline->reset();
+								pipeline->translate( make_float3(rand()%15
+																, rand()%15
+																, rand()%15));
+								Sphere tmp( pipeline->transform(), rand()%5, scene.boundingPlaneNormals );
+								Polymorphic functions(
+													 dev_sphere_intersect
+													, dev_sphere_properties
+													, dev_sphere_intersectBV
+													, dev_sphere_transform
+													, set_sphere_bv
+													, *textureNames[appearence.texture]
+														);
+								packProcedural<Sphere>(tmp,functions, appearence);
+						}else if(query == "plane"){
+								printPlane();
+								float4 points[3];
+								inputPoints<3>(points);
+								Plane tmp(points[0], points[1], points[2]);
+								Polymorphic functions(
+														  dev_plane_intersect
+														, dev_plane_properties
+														, dev_plane_intersectBV
+														, dev_plane_transform
+														, set_plane_bv
+														, *textureNames[appearence.texture]
+														);
+										packProcedural<Plane>(tmp, functions, appearence);
+						}else if(query == "cube"){
+								float4 points[2];
+								std::cout<<"Input the closest down left vertex and the far one."<<std::endl;
+								inputPoints<2>(points);
+								Cube cube( points[0], points[1] );
+								Polymorphic functions(
+													 dev_cube_intersect
+													, dev_cube_properties
+													, dev_cube_intersectBV
+													, dev_cube_transform
+													, set_cube_bv
+													, *textureNames[appearence.texture]
+													);
+								packProcedural<Cube>( cube, functions, appearence );
+										 }
+						else{
+								std::cout<<"This option is not available.";
 							}
-							std::cout<<materialType<<" material type has been set."<<std::endl;
-				if(query == "sphere"){
-						pipeline->reset();
-						pipeline->translate( make_float3(rand()%15
-														, rand()%15
-														, rand()%15));
-						Sphere tmp( pipeline->transform(), rand()%5, scene.boundingPlaneNormals );
-						Polymorphic functions(
-											 dev_sphere_intersect
-											, dev_sphere_properties
-											, dev_sphere_intersectBV
-											, dev_sphere_transform
-											, set_sphere_bv
-											, *textureNames[appearence.texture]
-												);
-						packProcedural<Sphere>(tmp,functions, appearence);
-				}else if(query == "plane"){
-						printPlane();
-						float4 points[3];
-						inputPoints<3>(points);
-						Plane tmp(points[0], points[1], points[2]);
-						Polymorphic functions(
-												  dev_plane_intersect
-												, dev_plane_properties
-												, dev_plane_intersectBV
-												, dev_plane_transform
-												, set_plane_bv
-												, *textureNames[appearence.texture]
-												);
-								packProcedural<Plane>(tmp, functions, appearence);
-				}else if(query == "cube"){
-						float4 points[2];
-						std::cout<<"Input the closest down left vertex and the far one."<<std::endl;
-						inputPoints<2>(points);
-						Cube cube( points[0], points[1] );
-						Polymorphic functions(
-											 dev_cube_intersect
-											, dev_cube_properties
-											, dev_cube_intersectBV
-											, dev_cube_transform
-											, set_cube_bv
-											, *textureNames[appearence.texture]
-											);
-						packProcedural<Cube>( cube, functions, appearence );
-								 }
-				else{ std::cout<<"This option is not available."; }
+						++i;
 				}
 				std::cout<<"\nDone. You can continue or type quit / [Ecs] ."<<std::endl;
 
 				std::cin.clear(); std::cin.ignore(INT_MAX,'\n');
+				}else{
+					continue;
 				}
 		}else{
 				run_string(query, moveOn);
 			}
 		}
-
-	 if(!meshes.size() && !objects.size())
-		 throw std::bad_alloc();
 	}
 /*!
 * \brief Function copies meshes to device memory and initializes wrapper objects.
