@@ -37,37 +37,38 @@ float Quaternion::length(){
     	return sqrtf(xyzw.x * xyzw.x + xyzw.y * xyzw.y + xyzw.z * xyzw.z + xyzw.w * xyzw.w);
     }
 __host__ __device__
-Quaternion Quaternion::Normalize(){
+Quaternion Quaternion::Normalize()
+{
 
     float len = length();
 
-    if(!len) {
-    	return *this;
-    }else{
-			float invLen = 1/len;
-			xyzw.x *= invLen;
-			xyzw.y *= invLen;
-			xyzw.z *= invLen;
-			xyzw.w *= invLen;
-			return *this;
-    	}
+    if(!len) 
+		return *this;
+
+	float invLen = 1/len;
+	xyzw.x *= invLen;
+	xyzw.y *= invLen;
+	xyzw.z *= invLen;
+	xyzw.w *= invLen;
+	return *this;
 
 }
 __host__ __device__
-SquareMatrix4f Quaternion::toMatrix(){
+SquareMatrix4f Quaternion::toMatrix()
+{
 	*this = this->Normalize();
 
-  float  xx = powf( xyzw.x, 2 );
-  float  xy = xyzw.x * xyzw.y;
-  float  xz = xyzw.x * xyzw.z;
-  float  xw = xyzw.x * xyzw.w;
+	float  xx = powf( xyzw.x, 2 );
+	float  xy = xyzw.x * xyzw.y;
+	float  xz = xyzw.x * xyzw.z;
+	float  xw = xyzw.x * xyzw.w;
 
-  float  yy = powf( xyzw.y, 2);
-  float  yz = xyzw.y * xyzw.z;
-  float  yw = xyzw.y * xyzw.w;
-  float  zz = powf( xyzw.z, 2 );
-  float  zw = xyzw.z * xyzw.w;
-  float ww = powf( xyzw.w, 2 );
+	float  yy = powf( xyzw.y, 2);
+	float  yz = xyzw.y * xyzw.z;
+	float  yw = xyzw.y * xyzw.w;
+	float  zz = powf( xyzw.z, 2 );
+	float  zw = xyzw.z * xyzw.w;
+	float ww = powf( xyzw.w, 2 );
 
 	return SquareMatrix4f( ww + xx - yy -zz,  2 * ( xy - zw ),       2 * ( xz + yw )     , 0
 					, 2*(xy + zw),       ww - xx - yy - zz,     2 * ( yz - xw )     , 0
@@ -113,7 +114,8 @@ Quaternion Quaternion::conjugate(){
 	return Quaternion( -xyzw.x, -xyzw.y, -xyzw.z, xyzw.w);
 }
 __host__ __device__
-Quaternion operator*(const Quaternion& l, const Quaternion& r){
+Quaternion operator*(const Quaternion& l, const Quaternion& r)
+{
 
     const float w = (l.xyzw.w * r.xyzw.w) - (l.xyzw.x * r.xyzw.x)
     		- (l.xyzw.y * r.xyzw.y) - (l.xyzw.z * r.xyzw.z);

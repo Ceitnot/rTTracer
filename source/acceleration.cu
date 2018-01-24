@@ -19,7 +19,8 @@ Boundaries::Boundaries(){
         distances[i][0] = kInfinity, distances[i][1] = -kInfinity;
 }
 __host__ __device__
-bool Boundaries::hit(Ray &ray, float (&precomPuted)[2][7], uint8_t *planeIndex) const {
+bool Boundaries::hit(Ray &ray, float (&precomPuted)[2][7], uint8_t *planeIndex) const 
+{
 	//here ray.t is closest plane hitPoint and ray.tNearest is the other side planes hit point
 	for (uint8_t i = 0; i < nNormals; ++i) {
 
@@ -34,14 +35,15 @@ bool Boundaries::hit(Ray &ray, float (&precomPuted)[2][7], uint8_t *planeIndex) 
 	return true;
 }
 __host__ __device__
-const float& Boundaries::at(size_t planePairNumber, size_t farOrClose) const{// must throw an exception
+const float& Boundaries::at(size_t planePairNumber, size_t farOrClose) const
+{// must throw an exception
 	return distances[planePairNumber][farOrClose];
 }
 #ifdef __ACCELERATION2
 template <class T>
-__global__ void compute_min_max(T * elements, compare comp, size_t size, T* result){
+__global__ void compute_min_max(T * elements, compare comp, size_t size, T* result)
+{
 	__shared__ T tmp [ threadsInblock ];
-//		memset(tmp, kInfinity, threadsInblock*sizeof(T) );
 	int tid  = threadIdx.x + blockDim.x*blockIdx.x;
 	tmp[threadIdx.x] = kInfinity;
 	if(tid < size){
@@ -63,17 +65,15 @@ __global__ void compute_min_max(T * elements, compare comp, size_t size, T* resu
 	}
 }
 
-float acceleratedMinMax(float *gpu_elements, size_t size, compare& dev_compare, compare cpu_compare){
+float acceleratedMinMax(float *gpu_elements, size_t size, compare& dev_compare, compare cpu_compare)
+{
 
 		float *result;
 
-		//int size = sizeof(elements)/ sizeof(elements[0]);
 		int sresult = (size + threadsInblock - 1)/threadsInblock;
 
 		dim3 thrs(threadsInblock);
 		dim3 blcs(sresult);
-		//allocateGPU(&gpu_array, size*sizeof(float) );
-		//copyToDevice(gpu_array, &elements[0], size*sizeof(float) );
 
 		allocateGPU(&result, sresult*sizeof(float) );
 

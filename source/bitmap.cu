@@ -14,7 +14,8 @@ limitations under the License.
 #include "bitmap.cuh"
 #include "helper.cuh"
 #include <cassert>
-int chooseDevice(){
+int chooseDevice()
+{
 	int count = 0;
 	uint8_t max_major = 0;
 	uint8_t max_minor = 0;

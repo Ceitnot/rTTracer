@@ -13,86 +13,86 @@ limitations under the License.
 #include"objectBox.cuh"
 #include "rendering.cuh"
 #include "global_constants.cuh"
-void deleteMesh(DevObject* object){
+void deleteMesh(DevObject* object)
+{
 	checkError( cudaFree( const_cast<void *>( object->data() ) ) );
 }
 __host__ __device__
-	 bool intersectMesh( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt)
-        {
-			const Mesh * mesh = reinterpret_cast<const Mesh *> (obj.data());
+ bool intersectMesh( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt)
+{
+	const Mesh * mesh = reinterpret_cast<const Mesh *> (obj.data());
 
-            bool isect = false;
-            Vec3f triVerts[3];
-            float t = kInfinity;
-            for (uint32_t i = 0; i < mesh->numTris; ++i) {
+	bool isect = false;
+	Vec3f triVerts[3];
+	float t = kInfinity;
+	for (uint32_t i = 0; i < mesh->numTris; ++i) {
 
-                triVerts[0] =  mesh->P[mesh->triangles[i][0]];
-                triVerts[1] =  mesh->P[mesh->triangles[i][1]];
-                triVerts[2] =  mesh->P[mesh->triangles[i][2]];
-                float u = 0, v = 0;
+		triVerts[0] =  mesh->P[mesh->triangles[i][0]];
+		triVerts[1] =  mesh->P[mesh->triangles[i][1]];
+		triVerts[2] =  mesh->P[mesh->triangles[i][2]];
+		float u = 0, v = 0;
 
-                if ( mesh->triangles->hit(ray, triVerts, u, v) && ray.tNearest < t){
-        		  //save barycentric coordinates
-                	ctxt.textureCoordinates.xy.x = u;
-                	ctxt.textureCoordinates.xy.y = v;
-                	ctxt.triangleIndex = i;// сохраняем индекс пересеченного трейгольника.
-                	t = ray.tNearest;
-                	isect = true;
-                }
-            }
-            ray.tNearest = t;
-            return isect;
-        }
+		if ( mesh->triangles->hit(ray, triVerts, u, v) && ray.tNearest < t){
+		  //save barycentric coordinates
+			ctxt.textureCoordinates.xy.x = u;
+			ctxt.textureCoordinates.xy.y = v;
+			ctxt.triangleIndex = i;// сохраняем индекс пересеченного трейгольника.
+			t = ray.tNearest;
+			isect = true;
+		}
+	}
+	ray.tNearest = t;
+	return isect;
+}
 //intersect sphere
 
 __host__ __device__
-	 bool intersectSphere( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt)
-        {
-			 const Sphere * sphere = reinterpret_cast<const Sphere *> (obj.data());
-			 volatile const Sphere _sphere( *sphere );
-			float t0, t1; //two distances
-			// hypotenuse
-			Vec3f L = sphere->center() - ray.orig;
-			//find a projection length from origin to the sphere center
-			//on the ray
-			float tca = L.dot(ray.dir);
-			//an intersection can happen only in front of the camera
-			if ( tca < 0 ) return false;
-			//d2 - a cathetus length of the right triangle from a sphere center to the ray
-			//use Pythagorian theorem. L.L - squared L length
+bool intersectSphere( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt)
+{
+	 const Sphere * sphere = reinterpret_cast<const Sphere *> (obj.data());
+	 volatile const Sphere _sphere( *sphere );
+	float t0, t1; //two distances
+	// hypotenuse
+	Vec3f L = sphere->center() - ray.orig;
+	//find a projection length from origin to the sphere center
+	//on the ray
+	float tca = L.dot(ray.dir);
+	//an intersection can happen only in front of the camera
+	if ( tca < 0 ) return false;
+	//d2 - a cathetus length of the right triangle from a sphere center to the ray
+	//use Pythagorian theorem. L.L - squared L length
 
-			float d2 = L.dot(L) - tca * tca;
-			//if d2 > than squared radius
-			//then ray definitely misses the sphere
-			if ( d2 > sphere->squareRadius() ) return false;
-			//use pathegorian theorem again to find
-			// the length between d and hit point
+	float d2 = L.dot(L) - tca * tca;
+	//if d2 > than squared radius
+	//then ray definitely misses the sphere
+	if ( d2 > sphere->squareRadius() ) return false;
+	//use pathegorian theorem again to find
+	// the length between d and hit point
 
-			float thc = sqrt( sphere->squareRadius() - d2);
+	float thc = sqrt( sphere->squareRadius() - d2);
 
-			// find nearest and farthest distance on the ray
-			t0 = tca - thc;
-			t1 = tca + thc;
+	// find nearest and farthest distance on the ray
+	t0 = tca - thc;
+	t1 = tca + thc;
 
-	        if (t0 > t1) algorithms::swap(t0, t1);
+	if (t0 > t1) algorithms::swap(t0, t1);
 
-	        if (t0 < 0) {
-	            t0 = t1; // if t0 is negative, let's use t1 instead
-	            if (t0 < 0) return false; // both t0 and t1 are negative
-	        }
+	if (t0 < 0) {
+		t0 = t1; // if t0 is negative, let's use t1 instead
+		if (t0 < 0) return false; // both t0 and t1 are negative
+	}
 
-	        ray.t = t0;
+	ray.t = t0;
 
-	 	   if( ray.t > ray.tMax || ray.t < ray.tMin) return false;
-	 	    //save positive nearest point on the ray if calculated value is less then previous one
-	 	    //or return false and don't save any
-	 	  // return ( ray.t < ray.tNearest) ? ( ray.t < ray.tNearest) : false;
-	 	  return ( ray.t < ray.tNearest) ? ray.tNearest = ray.t : false;
+   if( ray.t > ray.tMax || ray.t < ray.tMin) return false;
+	//save positive nearest point on the ray if calculated value is less then previous one
+	//or return false and don't save any
+  return  ray.t < ray.tNearest ? ray.tNearest = ray.t : false;
 
-        }
+}
 __host__ __device__
-bool planeTest(const Plane &plane, Ray& ray){
-
+bool planeTest(const Plane &plane, Ray& ray)
+{
     float denom = plane.normal().dot(ray.dir.normalize());
     if (denom > 1e-6) {
         Vec3f p0l0 = plane[0] - ray.orig;
@@ -103,12 +103,13 @@ bool planeTest(const Plane &plane, Ray& ray){
     return false;
 }
 __host__ __device__
-	 bool intersectPlane( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt){
+bool intersectPlane( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt){
 	const Plane &plane = *reinterpret_cast<const Plane *> (obj.data());
 	return planeTest(plane, ray);
 }
 __host__ __device__
-	 bool intersectCube( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt){
+bool intersectCube( Ray& ray, DevObject& obj, GPU::RenderingContext& ctxt)
+{
 	const Cube &cube = *reinterpret_cast<const Cube *> (obj.data());
 	uint8_t indexY = 3, indexZ = 0; //to store plane indices
 	ctxt.index = 4;
@@ -164,12 +165,11 @@ __host__ __device__
 	if( ray.t > ray.tMax || ray.t < ray.tMin) return false;
 	//save positive nearest point on the ray if calculated value is less then previous one
 	//or return false and don't save any
-	// return ( ray.t < ray.tNearest) ? ( ray.t < ray.tNearest) : false;
-	return ( ray.t < ray.tNearest) ? ray.tNearest = ray.t : false;
-
+	return ray.t < ray.tNearest ? ray.tNearest = ray.t : false;
 }
 __host__ __device__
-bool intersectBoundingVolume(Ray& ray, float (&precompute)[2][7], DevObject& currentObject, uint8_t& normalIndex){
+bool intersectBoundingVolume(Ray& ray, float (&precompute)[2][7], DevObject& currentObject, uint8_t& normalIndex)
+{
 
 	const Boundaries * bv = reinterpret_cast<const Boundaries *>( currentObject.boundaries() );
 	return bv->hit(ray, precompute, &normalIndex);
@@ -212,7 +212,8 @@ __host__ __device__
 void sphereProperties (const DevObject& object,
 	        const Vec3f &hitPoint,
 	        GPU::RenderingContext& ctx,
-	        Vec2f &hitTextureCoordinates){
+	        Vec2f &hitTextureCoordinates)
+{
 	const Sphere * sphere = reinterpret_cast<const Sphere *> (object.data());
 	ctx.hitNormal = hitPoint - sphere->center();
 	ctx.hitNormal.normalize();
@@ -224,7 +225,8 @@ __host__ __device__
 	void getPlaneProperties(const Plane &plane
 							,const Vec3f &hitPoint
 							,GPU::RenderingContext& ctx
-							,Vec2f &hitTextureCoordinates){
+							,Vec2f &hitTextureCoordinates)
+{
 	ctx.hitNormal = -plane.normal();
 	float2 uv = texCoordinates(plane, hitPoint);
 	hitTextureCoordinates.xy.x = uv.x/plane.width();
@@ -234,7 +236,8 @@ __host__ __device__
 void planeProperties (const DevObject& object,
 	        const Vec3f &hitPoint,
 	        GPU::RenderingContext& ctx,
-	        Vec2f &hitTextureCoordinates){
+	        Vec2f &hitTextureCoordinates)
+{
 	const Plane &plane = *reinterpret_cast<const Plane *> (object.data());
 	getPlaneProperties(plane, hitPoint, ctx, hitTextureCoordinates);
 }
@@ -242,7 +245,8 @@ __host__ __device__
 void cubeProperties (const DevObject& object,
 	        const Vec3f &hitPoint,
 	        GPU::RenderingContext& ctx,
-	        Vec2f &hitTextureCoordinates){
+	        Vec2f &hitTextureCoordinates)
+{
 	const Cube &cube = *reinterpret_cast<const Cube *> (object.data());
 	ctx.hitNormal = cube.normal(ctx.index);
 	Plane plane(cube[  cube.vIndex(ctx.index, 0)], cube[ cube.vIndex(ctx.index, 1)], cube[ cube.vIndex(ctx.index, 2)],
@@ -253,7 +257,8 @@ void cubeProperties (const DevObject& object,
 }
 //mesh
  __device__
-void transformMesh(DevObject* object, const SquareMatrix4f& mTransform){
+void transformMesh(DevObject* object, const SquareMatrix4f& mTransform)
+{
 	int offset = threadIdx.x + blockIdx.x * blockDim.x;
 	Mesh& mesh = *reinterpret_cast<Mesh *>( object->data() );
 
@@ -264,34 +269,38 @@ void transformMesh(DevObject* object, const SquareMatrix4f& mTransform){
 	mesh[offset] = vertexBuffer[threadIdx.x];
 }
  __device__
-void transformSphere(DevObject* object, const SquareMatrix4f& mTransform){
+void transformSphere(DevObject* object, const SquareMatrix4f& mTransform)
+{
 	Sphere& sphere = *reinterpret_cast<Sphere *>( object->data() );
 	//no scale yet
 	mTransform.mulPointMat( sphere.center(), sphere.center() );
 
 }
  __device__
- void computePlane(Plane& plane, const SquareMatrix4f& mTransform){
-		int offset = threadIdx.x + blockIdx.x * blockDim.x;
-		__shared__ Vec3f vertexBuffer[THREADS_ALONG_X];
-		vertexBuffer[threadIdx.x] = plane[offset];
-		mTransform.mulPointMat( vertexBuffer[threadIdx.x]
-		                                      , vertexBuffer[threadIdx.x] );
-		plane[offset] = vertexBuffer[threadIdx.x];
+ void computePlane(Plane& plane, const SquareMatrix4f& mTransform)
+ {
+	int offset = threadIdx.x + blockIdx.x * blockDim.x;
+	__shared__ Vec3f vertexBuffer[THREADS_ALONG_X];
+	vertexBuffer[threadIdx.x] = plane[offset];
+	mTransform.mulPointMat( vertexBuffer[threadIdx.x]
+										  , vertexBuffer[threadIdx.x] );
+	plane[offset] = vertexBuffer[threadIdx.x];
  }
  __device__
- void transformPlane(DevObject* object, const SquareMatrix4f& mTransform){
-		Plane& plane = *reinterpret_cast<Plane *>( object->data() );
-		computePlane(plane, mTransform);
+ void transformPlane(DevObject* object, const SquareMatrix4f& mTransform)
+ {
+	Plane& plane = *reinterpret_cast<Plane *>( object->data() );
+	computePlane(plane, mTransform);
  }
 
  __device__
  void transformCube(DevObject* object, const SquareMatrix4f& mTransform)
  {
-		Cube &cube = *reinterpret_cast< Cube *> (object->data());
-		for(int i = 0; i < Cube::vertsNumber; ++i){
-			mTransform.mulPointMat( cube[i], cube[i] );
-		}
+	Cube &cube = *reinterpret_cast< Cube *> (object->data());
+	for(int i = 0; i < Cube::vertsNumber; ++i)
+	{
+		mTransform.mulPointMat( cube[i], cube[i] );
+	}
  }
 
  __device__
@@ -324,7 +333,8 @@ void transformSphere(DevObject* object, const SquareMatrix4f& mTransform){
 //light
 
 __device__
-Vec3f  distantLightReflectedColor(const ILight* _light, GPU::RenderingContext& rctx, Vec3f& albedo){
+Vec3f  distantLightReflectedColor(const ILight* _light, GPU::RenderingContext& rctx, Vec3f& albedo)
+{
 
 	const DistantLight<Vec3f> &light = *reinterpret_cast< const DistantLight<Vec3f> *>( _light->data() );
 	return (albedo / M_PI
@@ -345,52 +355,54 @@ template <class ObjectType>
 void setAccelerationVolume(const ObjectType* object
 								, Boundaries* boundaries
 								, Vec3f (&boundingPlaneNormals)[7]
-								,float * (&gpu_allDotProducts)[7] ){
+								,float * (&gpu_allDotProducts)[7] )
+{
 	thrust::device_vector<float> nearFar(
-				Boundaries::nNormals * Boundaries::nPlaneSet );
+	Boundaries::nNormals * Boundaries::nPlaneSet );
 		//compute min and max dot product of each normal with every vertex
 		cudaStream_t streams[Boundaries::nNormals];
 
-		#pragma omp parallel for
-			for(int i = 0; i < Boundaries::nNormals; ++i){
-				cudaStreamCreate(&streams[i]);
+	#pragma omp parallel for
+		for(int i = 0; i < Boundaries::nNormals; ++i)
+		{
+			cudaStreamCreate(&streams[i]);
 
-				//compute all dot products of bounding planes normals and all of object point
-				GPU::massiveDotProduct<ObjectType>
-					<<< gridDIM( object->vertsNumber, THREADS_ALONG_X)
-					, THREADS_ALONG_X, 0,streams[i] >>>
-					 ( object
-					, boundingPlaneNormals[i]
-					, gpu_allDotProducts[i]
-					, object->vertsNumber);
+			//compute all dot products of bounding planes normals and all of object point
+			GPU::massiveDotProduct<ObjectType>
+				<<< gridDIM( object->vertsNumber, THREADS_ALONG_X)
+				, THREADS_ALONG_X, 0,streams[i] >>>
+				 ( object
+				, boundingPlaneNormals[i]
+				, gpu_allDotProducts[i]
+				, object->vertsNumber);
 
-				//synchronize GPU threads and CPU threads
-				cudaDeviceSynchronize();
+			//synchronize GPU threads and CPU threads
+			cudaDeviceSynchronize();
 
-				thrust::device_vector<float> vectorDots( gpu_allDotProducts[i]
-						, gpu_allDotProducts[i] + object->vertsNumber) ;
-				thrust::device_vector<float>::iterator iterMin =thrust::min_element(
-						vectorDots.begin()
-						, vectorDots.end() );
-				thrust::device_vector<float>::iterator iterMax = thrust::max_element( vectorDots.begin()
-						, vectorDots.end() );
+			thrust::device_vector<float> vectorDots( gpu_allDotProducts[i]
+					, gpu_allDotProducts[i] + object->vertsNumber) ;
+			thrust::device_vector<float>::iterator iterMin =thrust::min_element(
+					vectorDots.begin()
+					, vectorDots.end() );
+			thrust::device_vector<float>::iterator iterMax = thrust::max_element( vectorDots.begin()
+					, vectorDots.end() );
 
-				nearFar[ i * 2 ] = *iterMin;
-				nearFar[ i * 2 + 1] = *iterMax;
+			nearFar[ i * 2 ] = *iterMin;
+			nearFar[ i * 2 + 1] = *iterMax;
 
-			}
-		 cudaDeviceSynchronize();
-		 GPU::assignBoundingObject < Boundaries, float *, Boundaries::nNormals  >
-				<<< gridDIM(Boundaries::nNormals, THREADS_ALONG_X)
-				, THREADS_ALONG_X >>>
-				( boundaries, thrust::raw_pointer_cast( nearFar.data() ));
-
+		}
+	 cudaDeviceSynchronize();
+	 GPU::assignBoundingObject < Boundaries, float *, Boundaries::nNormals  >
+			<<< gridDIM(Boundaries::nNormals, THREADS_ALONG_X)
+			, THREADS_ALONG_X >>>
+			( boundaries, thrust::raw_pointer_cast( nearFar.data() ));
 
 }
 void setPlaneAccelerationVolume(const DevObject* currentObject
 								, Boundaries* boundaries
 								, Vec3f (&boundingPlaneNormals)[7]
-								,float * (&gpu_allDotProducts)[7] ){
+								,float * (&gpu_allDotProducts)[7] )
+{
 	const Plane * plane = reinterpret_cast<const Plane *> (currentObject->data());
 	setAccelerationVolume<Plane>(plane, boundaries, boundingPlaneNormals, gpu_allDotProducts);
 }
@@ -398,7 +410,8 @@ void setPlaneAccelerationVolume(const DevObject* currentObject
 void setCubeAccelerationVolume(const DevObject* currentObject
 								, Boundaries* boundaries
 								, Vec3f (&boundingPlaneNormals)[7]
-								,float * (&gpu_allDotProducts)[7] ){
+								,float * (&gpu_allDotProducts)[7] )
+{
 	const Cube * cube = reinterpret_cast<const Cube *> (currentObject->data());
 	setAccelerationVolume<Cube>(cube, boundaries, boundingPlaneNormals, gpu_allDotProducts);
 }
@@ -406,7 +419,8 @@ void setCubeAccelerationVolume(const DevObject* currentObject
 void setMeshAccelerationVolume(const DevObject* currentObject
 								, Boundaries* boundaries
 								, Vec3f (&boundingPlaneNormals)[7]
-								,float * (&gpu_allDotProducts)[7] ){
+								,float * (&gpu_allDotProducts)[7] )
+{
 	const Mesh * mesh = reinterpret_cast<const Mesh *> (currentObject->data());
 	setAccelerationVolume<Mesh>(mesh, boundaries, boundingPlaneNormals, gpu_allDotProducts);
 }
@@ -414,7 +428,8 @@ void setMeshAccelerationVolume(const DevObject* currentObject
 void setSphereAccelerationVolume(const DevObject* currentObject
 								, Boundaries* boundaries
 								, Vec3f (&boundingPlaneNormals)[7]
-								,float * (&gpu_allDotProducts)[7] ){
+								,float * (&gpu_allDotProducts)[7] )
+{
 	const Sphere * sphere = reinterpret_cast<const Sphere *> (currentObject->data());
 
 	float * points;
@@ -428,28 +443,31 @@ void setSphereAccelerationVolume(const DevObject* currentObject
 			, THREADS_ALONG_X >>>
 			( boundaries, points);
 
-
 }
 
 __device__
-float strips (const Vec2f& hitTexCoordinates){
+float strips (const Vec2f& hitTexCoordinates)
+{
 	float angle = deg2rad(45);
     float s = hitTexCoordinates.xy.x * cosf(angle) - hitTexCoordinates.xy.y * sinf(angle);
     float scaleS = 20;
     return (modulo(s * scaleS) < 0.5);
 }
 __device__
-float wave (const Vec2f& hitTexCoordinates){
+float wave (const Vec2f& hitTexCoordinates)
+{
 	float scaleS = 10; // scale of the pattern
 	return (sinf(hitTexCoordinates.xy.x * 2 * M_PI * scaleS) + 1) * 0.5;
 }
 __device__
-float grid (const Vec2f& hitTexCoordinates){
+float grid (const Vec2f& hitTexCoordinates)
+{
 	float scaleS = 10, scaleT = 10; // scale of the pattern
 	return (cos(hitTexCoordinates.xy.y * 2 * M_PI * scaleT) * sin(hitTexCoordinates.xy.x * 2 * M_PI * scaleS) + 1) * 0.5;
 }
 __device__
-float checker (const Vec2f& hitTexCoordinates){
+float checker (const Vec2f& hitTexCoordinates)
+{
 	float angle = deg2rad(45);
     float s = hitTexCoordinates.xy.x * cosf(angle) - hitTexCoordinates.xy.y * sinf(angle);
     float t = hitTexCoordinates.xy.y * cosf(angle) + hitTexCoordinates.xy.x * sinf(angle);
@@ -457,6 +475,7 @@ float checker (const Vec2f& hitTexCoordinates){
     return (modulo(s * scaleS) < 0.5) ^ (modulo(t * scaleT) < 0.5);
 }
 __device__
-float none (const Vec2f& hitTexCoordinates){
+float none (const Vec2f& hitTexCoordinates)
+{
 	return 1;
 }
